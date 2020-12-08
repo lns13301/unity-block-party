@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class WallCollider : MonoBehaviour
 {
-    private static Vector2 RESET_VELOCITY = new Vector2(0, 0);
     private static string BALL_TAG = "Ball";
 
     [SerializeField] private Direction direction;
@@ -12,7 +11,7 @@ public class WallCollider : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        // StartCoroutine("BallCollisionEnter2D");
     }
 
     // Update is called once per frame
@@ -25,19 +24,13 @@ public class WallCollider : MonoBehaviour
     {
         if (collision.gameObject.tag == BALL_TAG)
         {
-            ChangeDirection(collision.gameObject, direction);
+            DealEnteredBall(collision.gameObject);
         }
     }
 
-    private void ChangeDirection(GameObject gameObject, Direction direction)
+    private void DealEnteredBall(GameObject ballObject)
     {
-        gameObject.GetComponent<Rigidbody2D>().velocity = RESET_VELOCITY;
-        PaddleController.instance.BounceOffBallCollider(gameObject, direction);
-    }
-
-    IEnumerator BallCollisionEnter2D()
-    {
-        yield return null;
+        ballObject.GetComponent<Ball>().ChangeDirection(direction);
     }
 }
 

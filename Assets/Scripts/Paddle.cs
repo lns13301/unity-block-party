@@ -22,9 +22,7 @@ public class Paddle : MonoBehaviour
     {
         if (collision.gameObject.tag == BALL_TAG)
         {
-            float value = transform.position.x - collision.transform.position.x;
-
-            PaddleController.instance.BounceOffBall(collision.gameObject, value);
+            collision.gameObject.GetComponent<Ball>().BounceOffBallPaddle(transform.position);
         }
     }
 }

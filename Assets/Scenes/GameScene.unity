@@ -1356,6 +1356,7 @@ GameObject:
   - component: {fileID: 456740652}
   - component: {fileID: 456740651}
   - component: {fileID: 456740650}
+  - component: {fileID: 456740653}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Ball
@@ -1408,7 +1409,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 0
+  m_GravityScale: 0.2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1465,6 +1466,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &456740653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456740648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09bfd4be37e53554c9baf660de6d1681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbody: {fileID: 0}
+  ballSpeed: 250
+  lastForceX: 0
+  lastForceY: 0
 --- !u!1 &458127018
 GameObject:
   m_ObjectHideFlags: 0
@@ -3643,8 +3660,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1209430291
-BoxCollider2D:
+--- !u!70 &1209430291
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3657,18 +3674,8 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0.16, y: 0.06, z: 0.16, w: 0.049999997}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.2}
-    newSize: {x: 0.64, y: 0.2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.64, y: 0.2}
-  m_EdgeRadius: 0
+  m_Size: {x: 0.54, y: 0.2}
+  m_Direction: 1
 --- !u!50 &1209430292
 Rigidbody2D:
   serializedVersion: 4
@@ -3677,19 +3684,19 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1209430288}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_AngularDrag: 0
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!114 &1209430293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5408,10 +5415,6 @@ MonoBehaviour:
   balls: []
   paddles: []
   isStart: 0
-  lastForceX: 0
-  lastForceY: 0
-  isUpward: 0
-  isLeft: 0
 --- !u!1 &1805346850
 GameObject:
   m_ObjectHideFlags: 0
@@ -5837,7 +5840,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1917496599
 Transform:
   m_ObjectHideFlags: 0
