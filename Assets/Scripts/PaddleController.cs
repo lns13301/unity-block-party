@@ -13,7 +13,9 @@ public class PaddleController : MonoBehaviour
     private static float BALL_SPEED = 250f;
     private static float FORCE_POWER_X = 0.1f;
     private static float FORCE_POWER_Y = 0.9f;
+    private static float DEFAULT_PADDLE_SCALE = 2;
 
+    public static PaddleController instance;
     [SerializeField] private float paddleBorder = PADDLE_BORDER;
     [SerializeField] private float ballSpeed = BALL_STOP_SPEED;
     [SerializeField] private float paddleX;
@@ -23,18 +25,38 @@ public class PaddleController : MonoBehaviour
 
     [SerializeField] private bool isStart = false;
 
+    [SerializeField] private float lastForceX;
+    [SerializeField] private float lastForceY;
+    [SerializeField] private bool isUpward;
+    [SerializeField] private bool isLeft;
+
+#if (UNITY_ANDROID)
+    void Awake()
+    {
+        Screen.SetResolution(1080, 1920, false);
+    }
+#else
+    void Awake()
+    {
+        Screen.SetResolution(540, 960, false);
+    }
+#endif
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
+        instance = this;
+
         InitializeGameObject(GameObject.Find("Paddles"), paddles);
         InitializeGameObject(GameObject.Find("Balls"), balls);
         StartCoroutine("Loop");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     IEnumerator Loop()
@@ -70,6 +92,10 @@ public class PaddleController : MonoBehaviour
         {
             isStart = true;
             ballSpeed = BALL_SPEED;
+            lastForceX = FORCE_POWER_X;
+            lastForceY = FORCE_POWER_Y;
+            isUpward = true;
+
             ballObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(FORCE_POWER_X, FORCE_POWER_Y).normalized * ballSpeed);
         }
     }
@@ -79,6 +105,34 @@ public class PaddleController : MonoBehaviour
         for (int i = 0; i < parentObject.transform.childCount; i++)
         {
             childObjects.Add(parentObject.transform.GetChild(i).gameObject);
+        }
+    }
+
+    public void BounceOffBall(GameObject gameObject, float valueX)
+    {
+        lastForceX = -valueX;
+        lastForceY = -lastForceY;
+        gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(lastForceX, lastForceY).normalized * ballSpeed);
+    }
+
+    public void BounceOffBallCollider(GameObject ballObject, Direction direction)
+    {
+        ballSpeed = BALL_SPEED;
+
+        switch (direction)
+        {
+            case Direction.LEFT:
+            case Direction.RIGHT:
+                lastForceX = -lastForceX;
+                ballObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(lastForceX, lastForceY).normalized * ballSpeed);
+
+                break;
+            case Direction.TOP:
+            case Direction.BOTTOM:
+                lastForceY = -lastForceY;
+                ballObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(lastForceX, lastForceY).normalized * ballSpeed);
+
+                break;
         }
     }
 }

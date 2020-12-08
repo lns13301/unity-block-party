@@ -625,6 +625,7 @@ GameObject:
   - component: {fileID: 130066752}
   - component: {fileID: 130066751}
   - component: {fileID: 130066750}
+  - component: {fileID: 130066753}
   m_Layer: 0
   m_Name: ColliderLeft
   m_TagString: Untagged
@@ -744,6 +745,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &130066753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130066748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79457743f76fad34e99ad5db9de06634, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: 0
 --- !u!1 &163989325
 GameObject:
   m_ObjectHideFlags: 0
@@ -919,7 +933,7 @@ GameObject:
   - component: {fileID: 263371819}
   m_Layer: 0
   m_Name: Balls
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -951,6 +965,7 @@ GameObject:
   - component: {fileID: 324227427}
   - component: {fileID: 324227426}
   - component: {fileID: 324227425}
+  - component: {fileID: 324227428}
   m_Layer: 0
   m_Name: ColliderRight
   m_TagString: Untagged
@@ -1070,6 +1085,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &324227428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324227423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79457743f76fad34e99ad5db9de06634, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: 1
 --- !u!1 &366387771
 GameObject:
   m_ObjectHideFlags: 0
@@ -1330,7 +1358,7 @@ GameObject:
   - component: {fileID: 456740650}
   m_Layer: 0
   m_Name: Ball
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1349,8 +1377,8 @@ Transform:
   m_Father: {fileID: 263371819}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &456740650
-BoxCollider2D:
+--- !u!58 &456740650
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1363,18 +1391,8 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.08, y: 0.08}
-    newSize: {x: 0.08, y: 0.08}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.08, y: 0.08}
-  m_EdgeRadius: 0
+  m_Radius: 0.04
 --- !u!50 &456740651
 Rigidbody2D:
   serializedVersion: 4
@@ -1389,13 +1407,13 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &456740652
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1903,8 +1921,8 @@ Transform:
   m_Children:
   - {fileID: 130066749}
   - {fileID: 324227424}
-  - {fileID: 1117575917}
   - {fileID: 866212533}
+  - {fileID: 1117575917}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2688,6 +2706,7 @@ GameObject:
   - component: {fileID: 866212536}
   - component: {fileID: 866212535}
   - component: {fileID: 866212534}
+  - component: {fileID: 866212537}
   m_Layer: 0
   m_Name: ColliderTop
   m_TagString: Untagged
@@ -2707,7 +2726,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 585995539}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &866212534
 BoxCollider2D:
@@ -2807,6 +2826,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &866212537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866212532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79457743f76fad34e99ad5db9de06634, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: 2
 --- !u!1 &878835649
 GameObject:
   m_ObjectHideFlags: 0
@@ -3393,6 +3425,7 @@ GameObject:
   - component: {fileID: 1117575920}
   - component: {fileID: 1117575919}
   - component: {fileID: 1117575918}
+  - component: {fileID: 1117575921}
   m_Layer: 0
   m_Name: ColliderBottom
   m_TagString: Untagged
@@ -3412,7 +3445,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 585995539}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1117575918
 BoxCollider2D:
@@ -3512,6 +3545,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1117575921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117575916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79457743f76fad34e99ad5db9de06634, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: 3
 --- !u!1 &1209430288
 GameObject:
   m_ObjectHideFlags: 0
@@ -3524,6 +3570,7 @@ GameObject:
   - component: {fileID: 1209430290}
   - component: {fileID: 1209430292}
   - component: {fileID: 1209430291}
+  - component: {fileID: 1209430293}
   m_Layer: 0
   m_Name: Paddle
   m_TagString: Untagged
@@ -3643,6 +3690,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1209430293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209430288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 325eb4bdade7ca645a22a9a1fe64bd58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1264610606
 GameObject:
   m_ObjectHideFlags: 0
@@ -5349,6 +5408,10 @@ MonoBehaviour:
   balls: []
   paddles: []
   isStart: 0
+  lastForceX: 0
+  lastForceY: 0
+  isUpward: 0
+  isLeft: 0
 --- !u!1 &1805346850
 GameObject:
   m_ObjectHideFlags: 0
