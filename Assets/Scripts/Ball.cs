@@ -6,10 +6,17 @@ public class Ball : MonoBehaviour
 {
     private static float MIN_SPEED = 250;
     private static float MIN_VELOCITY_SPEED = 1f;
-    private static float BALL_SPEED = 300;
+    private static float BALL_SPEED = 400;
     private static float CORRECT_BALL_SPEED = 30;
     private static float FORCE_POWER_X = 0.3f;
     private static float FORCE_POWER_Y = 0.9f;
+    private static float GRAVITY_SCALE = 0.2f;
+    private static float CORRECT_VALUE = 0.8f;
+    private static float BOTTOM_LINE_Y_LIMIT = -4.5f;
+    private static float BOTTOM_LINE_CHECK_TIMER_LIMIT = 1f;
+    private static float BOTTOM_LINE_CHECK_TIMER_RESET = 0;
+    private static float RESET_FORCE_POWER = 0.1f;
+    private static Vector2 RESET_BALL_POSITION = new Vector2(0f, -2f);
 
     [SerializeField] private new Rigidbody2D rigidbody;
 
@@ -17,6 +24,8 @@ public class Ball : MonoBehaviour
 
     [SerializeField] private float lastForceX;
     [SerializeField] private float lastForceY;
+
+    [SerializeField] private float bottomStateTimer;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +38,7 @@ public class Ball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        BottomStateCheck();
     }
 
     IEnumerator Loop()
@@ -41,11 +50,34 @@ public class Ball : MonoBehaviour
         }
     }
 
+    private void BottomStateCheck()
+    {
+        if (transform.position.y < BOTTOM_LINE_Y_LIMIT)
+        {
+            bottomStateTimer += Time.deltaTime;
+        }
+        else
+        {
+            bottomStateTimer = BOTTOM_LINE_CHECK_TIMER_RESET;
+        }
+
+        if (bottomStateTimer > BOTTOM_LINE_CHECK_TIMER_LIMIT)
+        {
+            lastForceX = RESET_FORCE_POWER;
+            lastForceY = -FORCE_POWER_Y;
+            rigidbody.velocity = Vector2.zero;
+            transform.position = RESET_BALL_POSITION;
+            bottomStateTimer = BOTTOM_LINE_CHECK_TIMER_RESET;
+        }
+    }
+
     private void CorrectVelocity()
     {
         if (PaddleController.instance.isStart && Mathf.Abs(rigidbody.velocity.y) != 0 && Mathf.Abs(rigidbody.velocity.y) < MIN_VELOCITY_SPEED)
         {
             Debug.Log("속도 조정 발동!");
+            lastForceX = (lastForceX * CORRECT_VALUE);
+            lastForceY = (lastForceY * CORRECT_VALUE);
             rigidbody.AddForce(new Vector2(lastForceX, lastForceY).normalized * CORRECT_BALL_SPEED);
         }
     }
@@ -57,6 +89,7 @@ public class Ball : MonoBehaviour
         lastForceY = FORCE_POWER_Y;
 
         rigidbody.AddForce(new Vector2(FORCE_POWER_X, FORCE_POWER_Y).normalized * ballSpeed);
+        rigidbody.gravityScale = GRAVITY_SCALE;
     }
 
     public void BounceOffBallPaddle(Vector3 colliderPosition)
