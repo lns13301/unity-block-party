@@ -20,9 +20,10 @@ public class Paddle : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == BALL_TAG)
+/*        if (collision.gameObject.tag == BALL_TAG)
         {
-            collision.gameObject.GetComponent<Ball>().BounceOffBallPaddle(transform.position);
-        }
+            collision.gameObject.GetComponent<Ball>().reflectBall(transform.position);
+            // collision.gameObject.GetComponent<Ball>().BounceOffBallPaddle(transform.position);
+        }*/
     }
 }

@@ -6,39 +6,51 @@ public class Ball : MonoBehaviour
 {
     private static float MIN_SPEED = 250;
     private static float MIN_VELOCITY_SPEED = 1f;
-    private static float BALL_SPEED = 400;
+    private static float BALL_SPEED = 350;
     private static float CORRECT_BALL_SPEED = 30;
     private static float FORCE_POWER_X = 0.3f;
     private static float FORCE_POWER_Y = 0.9f;
+    private static float FORCE_POWER_LEFT = 0.4f;
+    private static float FORCE_POWER_RIGHT = -0.4f;
+    private static float FORCE_POWER_ZERO = 0;
     private static float GRAVITY_SCALE = 0.2f;
     private static float CORRECT_VALUE = 0.8f;
     private static float BOTTOM_LINE_Y_LIMIT = -4.5f;
-    private static float BOTTOM_LINE_CHECK_TIMER_LIMIT = 1f;
-    private static float BOTTOM_LINE_CHECK_TIMER_RESET = 0;
-    private static float RESET_FORCE_POWER = 0.1f;
+    private static float LEFT_LINE_X_LIMIT = -2.6f;
+    private static float RIGHT_LINE_X_LIMIT = 2.6f;
+    private static float LINE_CHECK_TIMER_LIMIT = 2f;
+    private static float LINE_CHECK_TIMER_RESET = 0;
+    private static float RESET_FORCE_POWER = 0.4f;
     private static Vector2 RESET_BALL_POSITION = new Vector2(0f, -2f);
+    private static string BRICK_TAG = "Brick";
 
     [SerializeField] private new Rigidbody2D rigidbody;
 
-    [SerializeField] private float ballSpeed = BALL_SPEED;
+    [SerializeField] private float ballSpeed;
 
     [SerializeField] private float lastForceX;
     [SerializeField] private float lastForceY;
 
     [SerializeField] private float bottomStateTimer;
+    [SerializeField] private float leftStateTimer;
+    [SerializeField] private float rightStateTimer;
 
     // Start is called before the first frame update
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
 
-        StartCoroutine("Loop");
+        ballSpeed = BALL_SPEED;
+
+        //StartCoroutine("Loop");
     }
 
     // Update is called once per frame
     void Update()
     {
-        BottomStateCheck();
+        //BottomStateCheck();
+        //LeftStateCheck();
+        //RightStateCheck();
     }
 
     IEnumerator Loop()
@@ -47,27 +59,6 @@ public class Ball : MonoBehaviour
         {
             CorrectVelocity();
             yield return new WaitForSeconds(0.01f);
-        }
-    }
-
-    private void BottomStateCheck()
-    {
-        if (transform.position.y < BOTTOM_LINE_Y_LIMIT)
-        {
-            bottomStateTimer += Time.deltaTime;
-        }
-        else
-        {
-            bottomStateTimer = BOTTOM_LINE_CHECK_TIMER_RESET;
-        }
-
-        if (bottomStateTimer > BOTTOM_LINE_CHECK_TIMER_LIMIT)
-        {
-            lastForceX = RESET_FORCE_POWER;
-            lastForceY = -FORCE_POWER_Y;
-            rigidbody.velocity = Vector2.zero;
-            transform.position = RESET_BALL_POSITION;
-            bottomStateTimer = BOTTOM_LINE_CHECK_TIMER_RESET;
         }
     }
 
@@ -102,7 +93,7 @@ public class Ball : MonoBehaviour
         rigidbody.AddForce(new Vector2(lastForceX, lastForceY).normalized * ballSpeed);
     }
 
-    public void ChangeDirection(Direction direction)
+/*    public void ChangeDirection(Direction direction)
     {
         rigidbody.velocity = Vector2.zero;
         ballSpeed = BALL_SPEED;
@@ -124,5 +115,82 @@ public class Ball : MonoBehaviour
                 rigidbody.AddForce(new Vector2(lastForceX, lastForceY).normalized * ballSpeed);
                 break;
         }
+    }*/
+
+/*    private void CollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "BRICK_TAG")
+        {
+
+        }
     }
+
+    // 버그 발생시 조정
+    private void BottomStateCheck()
+    {
+        if (transform.position.y < BOTTOM_LINE_Y_LIMIT)
+        {
+            bottomStateTimer += Time.deltaTime;
+        }
+        else
+        {
+            bottomStateTimer = LINE_CHECK_TIMER_RESET;
+        }
+
+        if (bottomStateTimer > LINE_CHECK_TIMER_LIMIT)
+        {
+            AddForceBall(RESET_FORCE_POWER, FORCE_POWER_Y);
+            bottomStateTimer = LINE_CHECK_TIMER_RESET;
+        }
+    }
+
+    private void LeftStateCheck()
+    {
+        if (transform.position.x < LEFT_LINE_X_LIMIT)
+        {
+            leftStateTimer += Time.deltaTime;
+        }
+        else
+        {
+            leftStateTimer = LINE_CHECK_TIMER_RESET;
+        }
+
+        if (leftStateTimer > LINE_CHECK_TIMER_LIMIT)
+        {
+            AddForceBall(FORCE_POWER_LEFT, RESET_FORCE_POWER);
+            leftStateTimer = LINE_CHECK_TIMER_RESET;
+        }
+    }
+
+    private void RightStateCheck()
+    {
+        if (transform.position.x > RIGHT_LINE_X_LIMIT)
+        {
+            rightStateTimer += Time.deltaTime;
+        }
+        else
+        {
+            rightStateTimer = LINE_CHECK_TIMER_RESET;
+        }
+
+        if (rightStateTimer > LINE_CHECK_TIMER_LIMIT)
+        {
+            AddForceBall(FORCE_POWER_RIGHT, RESET_FORCE_POWER);
+            rightStateTimer = LINE_CHECK_TIMER_RESET;
+        }
+    }
+
+    private void AddForceBall(float powerX, float powerY)
+    {
+        lastForceX = powerX;
+        lastForceY = powerY;
+        rigidbody.velocity = Vector2.zero;
+        rigidbody.AddForce(new Vector2(lastForceX, lastForceY).normalized * ballSpeed);
+        transform.position = RESET_BALL_POSITION;
+    }
+
+    public void reflectBall(Vector3 objectPosition)
+    {
+        rigidbody.AddForce((transform.position - objectPosition).normalized * ballSpeed);
+    }*/
 }
