@@ -25,7 +25,7 @@ public class Brick : MonoBehaviour
         return brickStat.hp <= 0;
     }
 
-    private void destroyGameObject()
+    private void DestroyGameObject()
     {
         if (isDestroy())
         {
@@ -36,8 +36,9 @@ public class Brick : MonoBehaviour
     public void takeDamage(int damage)
     {
         brickStat.hp -= damage;
+        SoundManager.instance.PlayOneShotEffectSound(0);
 
-        destroyGameObject();
+        DestroyGameObject();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

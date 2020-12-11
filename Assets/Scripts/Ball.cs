@@ -18,11 +18,13 @@ public class Ball : MonoBehaviour
     private static float BOTTOM_LINE_Y_LIMIT = -4.5f;
     private static float LEFT_LINE_X_LIMIT = -2.6f;
     private static float RIGHT_LINE_X_LIMIT = 2.6f;
-    private static float LINE_CHECK_TIMER_LIMIT = 2f;
+    private static float LINE_CHECK_TIMER_LIMIT = 4f;
     private static float LINE_CHECK_TIMER_RESET = 0;
     private static float RESET_FORCE_POWER = 0.4f;
     private static Vector2 RESET_BALL_POSITION = new Vector2(0f, -2f);
+    private static Vector2 PADDLE_FORCE_UP_VALUE = new Vector2(0.1f, 0.1f);
     private static string BRICK_TAG = "Brick";
+    private static string PADDLE_TAG = "Paddle";
 
     [SerializeField] private new Rigidbody2D rigidbody;
 
@@ -48,9 +50,10 @@ public class Ball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //BottomStateCheck();
-        //LeftStateCheck();
-        //RightStateCheck();
+        BottomStateCheck();
+        LeftStateCheck();
+        RightStateCheck();
+        TopStateCheck();
     }
 
     IEnumerator Loop()
@@ -93,7 +96,20 @@ public class Ball : MonoBehaviour
         rigidbody.AddForce(new Vector2(lastForceX, lastForceY).normalized * ballSpeed);
     }
 
-/*    public void ChangeDirection(Direction direction)
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag != BRICK_TAG)
+        {
+            SoundManager.instance.PlayOneShotEffectSound(1);
+        }
+
+        if (collision.gameObject.tag == PADDLE_TAG)
+        {
+            //rigidbody.AddForce(PADDLE_FORCE_UP_VALUE * ballSpeed);
+        }
+    }
+
+    /*    public void ChangeDirection(Direction direction)
     {
         rigidbody.velocity = Vector2.zero;
         ballSpeed = BALL_SPEED;
@@ -117,15 +133,25 @@ public class Ball : MonoBehaviour
         }
     }*/
 
-/*    private void CollisionEnter2D(Collision2D collision)
+    // 버그 발생시 조정
+    private void TopStateCheck()
     {
-        if (collision.gameObject.tag == "BRICK_TAG")
+        if (transform.position.y > -BOTTOM_LINE_Y_LIMIT)
         {
+            bottomStateTimer += Time.deltaTime;
+        }
+        else
+        {
+            bottomStateTimer = LINE_CHECK_TIMER_RESET;
+        }
 
+        if (bottomStateTimer > LINE_CHECK_TIMER_LIMIT)
+        {
+            AddForceBall(RESET_FORCE_POWER, FORCE_POWER_Y);
+            bottomStateTimer = LINE_CHECK_TIMER_RESET;
         }
     }
 
-    // 버그 발생시 조정
     private void BottomStateCheck()
     {
         if (transform.position.y < BOTTOM_LINE_Y_LIMIT)
@@ -189,7 +215,7 @@ public class Ball : MonoBehaviour
         transform.position = RESET_BALL_POSITION;
     }
 
-    public void reflectBall(Vector3 objectPosition)
+/*    public void reflectBall(Vector3 objectPosition)
     {
         rigidbody.AddForce((transform.position - objectPosition).normalized * ballSpeed);
     }*/
