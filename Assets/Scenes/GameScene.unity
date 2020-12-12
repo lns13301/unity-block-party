@@ -134,9 +134,9 @@ GameObject:
   - component: {fileID: 71107126}
   - component: {fileID: 71107125}
   - component: {fileID: 71107124}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (52)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -235,7 +235,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -253,8 +253,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -281,9 +281,9 @@ GameObject:
   - component: {fileID: 74520928}
   - component: {fileID: 74520927}
   - component: {fileID: 74520926}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (51)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -382,7 +382,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -400,8 +400,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -428,9 +428,9 @@ GameObject:
   - component: {fileID: 79925400}
   - component: {fileID: 79925399}
   - component: {fileID: 79925398}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (58)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -529,7 +529,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -547,8 +547,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -575,9 +575,9 @@ GameObject:
   - component: {fileID: 103922459}
   - component: {fileID: 103922458}
   - component: {fileID: 103922457}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (33)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -676,7 +676,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -694,8 +694,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -867,9 +867,9 @@ GameObject:
   - component: {fileID: 160365633}
   - component: {fileID: 160365632}
   - component: {fileID: 160365631}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (13)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -968,7 +968,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -986,8 +986,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -1014,9 +1014,9 @@ GameObject:
   - component: {fileID: 169556846}
   - component: {fileID: 169556845}
   - component: {fileID: 169556844}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (54)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1115,7 +1115,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1133,8 +1133,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -1337,9 +1337,9 @@ GameObject:
   - component: {fileID: 431617291}
   - component: {fileID: 431617290}
   - component: {fileID: 431617289}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (27)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1438,7 +1438,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1456,8 +1456,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -1484,9 +1484,9 @@ GameObject:
   - component: {fileID: 452978761}
   - component: {fileID: 452978762}
   - component: {fileID: 452978763}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (4)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1523,7 +1523,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1541,8 +1541,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -1871,9 +1871,9 @@ GameObject:
   - component: {fileID: 504695985}
   - component: {fileID: 504695984}
   - component: {fileID: 504695983}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (46)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1972,7 +1972,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1990,8 +1990,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -2018,9 +2018,9 @@ GameObject:
   - component: {fileID: 511313696}
   - component: {fileID: 511313695}
   - component: {fileID: 511313694}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (25)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2119,7 +2119,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2137,8 +2137,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -2165,9 +2165,9 @@ GameObject:
   - component: {fileID: 516891340}
   - component: {fileID: 516891339}
   - component: {fileID: 516891338}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (35)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2266,7 +2266,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2284,8 +2284,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -2312,9 +2312,9 @@ GameObject:
   - component: {fileID: 560903078}
   - component: {fileID: 560903077}
   - component: {fileID: 560903076}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (53)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2413,7 +2413,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2431,8 +2431,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -2459,9 +2459,9 @@ GameObject:
   - component: {fileID: 576221838}
   - component: {fileID: 576221837}
   - component: {fileID: 576221836}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (19)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2560,7 +2560,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2578,8 +2578,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -2640,9 +2640,9 @@ GameObject:
   - component: {fileID: 592361022}
   - component: {fileID: 592361021}
   - component: {fileID: 592361020}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (11)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2741,7 +2741,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2759,8 +2759,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -2787,9 +2787,9 @@ GameObject:
   - component: {fileID: 616229179}
   - component: {fileID: 616229178}
   - component: {fileID: 616229177}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (49)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2888,7 +2888,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2906,8 +2906,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -2934,9 +2934,9 @@ GameObject:
   - component: {fileID: 668722775}
   - component: {fileID: 668722774}
   - component: {fileID: 668722773}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (26)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3035,7 +3035,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3053,8 +3053,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -3081,9 +3081,9 @@ GameObject:
   - component: {fileID: 687971312}
   - component: {fileID: 687971311}
   - component: {fileID: 687971310}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (42)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3182,7 +3182,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3200,8 +3200,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -3215,6 +3215,78 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &702632853
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 702632855}
+  - component: {fileID: 702632854}
+  m_Layer: 0
+  m_Name: Global Light 2D
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &702632854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702632853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LightType: 4
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.5
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 0.5
+  m_LightVolumeOpacity: 0
+  m_ApplyToSortingLayers: 000000006f263b68
+  m_LightCookieSprite: {fileID: 0}
+  m_UseNormalMap: 0
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_ShadowIntensity: 0
+  m_ShadowVolumeIntensity: 0
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_PointLightDistance: 3
+  m_PointLightQuality: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
+--- !u!4 &702632855
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702632853}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -18.333311, y: 148.79242, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &709069459
 GameObject:
   m_ObjectHideFlags: 0
@@ -3228,9 +3300,9 @@ GameObject:
   - component: {fileID: 709069463}
   - component: {fileID: 709069462}
   - component: {fileID: 709069461}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (30)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3329,7 +3401,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3347,8 +3419,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -3375,9 +3447,9 @@ GameObject:
   - component: {fileID: 770623701}
   - component: {fileID: 770623700}
   - component: {fileID: 770623699}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (23)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3476,7 +3548,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3494,8 +3566,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -3552,9 +3624,9 @@ GameObject:
   - component: {fileID: 795561151}
   - component: {fileID: 795561150}
   - component: {fileID: 795561149}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (43)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3653,7 +3725,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3671,8 +3743,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -3844,9 +3916,9 @@ GameObject:
   - component: {fileID: 891922930}
   - component: {fileID: 891922929}
   - component: {fileID: 891922928}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (9)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3945,7 +4017,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3963,8 +4035,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -3991,9 +4063,9 @@ GameObject:
   - component: {fileID: 896121681}
   - component: {fileID: 896121680}
   - component: {fileID: 896121679}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (59)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4092,7 +4164,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4110,8 +4182,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -4138,9 +4210,9 @@ GameObject:
   - component: {fileID: 915125088}
   - component: {fileID: 915125087}
   - component: {fileID: 915125086}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (29)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4239,7 +4311,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4257,8 +4329,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -4285,9 +4357,9 @@ GameObject:
   - component: {fileID: 984162327}
   - component: {fileID: 984162326}
   - component: {fileID: 984162325}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (44)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4386,7 +4458,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4404,8 +4476,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -4432,9 +4504,9 @@ GameObject:
   - component: {fileID: 1064505796}
   - component: {fileID: 1064505795}
   - component: {fileID: 1064505794}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (38)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4533,7 +4605,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4551,8 +4623,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -4579,9 +4651,9 @@ GameObject:
   - component: {fileID: 1068844568}
   - component: {fileID: 1068844569}
   - component: {fileID: 1068844570}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (3)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4618,7 +4690,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4636,8 +4708,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -4726,9 +4798,9 @@ GameObject:
   - component: {fileID: 1078544505}
   - component: {fileID: 1078544504}
   - component: {fileID: 1078544503}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (10)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4827,7 +4899,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4845,8 +4917,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -4873,9 +4945,9 @@ GameObject:
   - component: {fileID: 1087570894}
   - component: {fileID: 1087570895}
   - component: {fileID: 1087570896}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (2)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4912,7 +4984,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4930,8 +5002,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -5165,9 +5237,9 @@ GameObject:
   - component: {fileID: 1133729655}
   - component: {fileID: 1133729654}
   - component: {fileID: 1133729653}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (39)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5266,7 +5338,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5284,8 +5356,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -5312,9 +5384,9 @@ GameObject:
   - component: {fileID: 1148088875}
   - component: {fileID: 1148088874}
   - component: {fileID: 1148088873}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (17)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5413,7 +5485,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5431,8 +5503,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -5459,9 +5531,9 @@ GameObject:
   - component: {fileID: 1173293300}
   - component: {fileID: 1173293299}
   - component: {fileID: 1173293298}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (24)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5560,7 +5632,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5578,8 +5650,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -5767,9 +5839,9 @@ GameObject:
   - component: {fileID: 1214968636}
   - component: {fileID: 1214968635}
   - component: {fileID: 1214968634}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (36)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5868,7 +5940,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5886,8 +5958,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -5914,9 +5986,9 @@ GameObject:
   - component: {fileID: 1224918443}
   - component: {fileID: 1224918442}
   - component: {fileID: 1224918441}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (41)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6015,7 +6087,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6033,8 +6105,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -6061,9 +6133,9 @@ GameObject:
   - component: {fileID: 1251162078}
   - component: {fileID: 1251162077}
   - component: {fileID: 1251162076}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (56)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6162,7 +6234,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6180,8 +6252,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -6208,9 +6280,9 @@ GameObject:
   - component: {fileID: 1252196591}
   - component: {fileID: 1252196590}
   - component: {fileID: 1252196589}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (50)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6309,7 +6381,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6327,8 +6399,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -6355,9 +6427,9 @@ GameObject:
   - component: {fileID: 1304471396}
   - component: {fileID: 1304471395}
   - component: {fileID: 1304471394}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (48)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6456,7 +6528,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6474,8 +6546,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -6502,9 +6574,9 @@ GameObject:
   - component: {fileID: 1330232955}
   - component: {fileID: 1330232954}
   - component: {fileID: 1330232953}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (12)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6603,7 +6675,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6621,8 +6693,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -6649,9 +6721,9 @@ GameObject:
   - component: {fileID: 1335124486}
   - component: {fileID: 1335124485}
   - component: {fileID: 1335124484}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (57)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6750,7 +6822,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6768,8 +6840,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -6796,9 +6868,9 @@ GameObject:
   - component: {fileID: 1335468977}
   - component: {fileID: 1335468978}
   - component: {fileID: 1335468979}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6835,7 +6907,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6853,8 +6925,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -7084,9 +7156,9 @@ GameObject:
   - component: {fileID: 1383436691}
   - component: {fileID: 1383436690}
   - component: {fileID: 1383436689}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (16)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7185,7 +7257,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7203,8 +7275,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -7231,9 +7303,9 @@ GameObject:
   - component: {fileID: 1494172929}
   - component: {fileID: 1494172928}
   - component: {fileID: 1494172927}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (22)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7332,7 +7404,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7350,8 +7422,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -7544,9 +7616,9 @@ GameObject:
   - component: {fileID: 1552286038}
   - component: {fileID: 1552286037}
   - component: {fileID: 1552286036}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (15)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7645,7 +7717,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7663,8 +7735,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -7691,9 +7763,9 @@ GameObject:
   - component: {fileID: 1565201237}
   - component: {fileID: 1565201236}
   - component: {fileID: 1565201235}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (18)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7792,7 +7864,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7810,8 +7882,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -7935,9 +8007,9 @@ GameObject:
   - component: {fileID: 1699484947}
   - component: {fileID: 1699484946}
   - component: {fileID: 1699484945}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (6)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8036,7 +8108,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8054,8 +8126,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -8082,9 +8154,9 @@ GameObject:
   - component: {fileID: 1711409934}
   - component: {fileID: 1711409933}
   - component: {fileID: 1711409932}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (20)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8183,7 +8255,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8201,8 +8273,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -8229,9 +8301,9 @@ GameObject:
   - component: {fileID: 1725206129}
   - component: {fileID: 1725206128}
   - component: {fileID: 1725206127}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (37)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8330,7 +8402,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8348,8 +8420,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -8376,9 +8448,9 @@ GameObject:
   - component: {fileID: 1735595279}
   - component: {fileID: 1735595278}
   - component: {fileID: 1735595277}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (28)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8477,7 +8549,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8495,8 +8567,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -8523,9 +8595,9 @@ GameObject:
   - component: {fileID: 1751981123}
   - component: {fileID: 1751981122}
   - component: {fileID: 1751981121}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (7)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8624,7 +8696,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8642,8 +8714,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -8670,9 +8742,9 @@ GameObject:
   - component: {fileID: 1752752592}
   - component: {fileID: 1752752591}
   - component: {fileID: 1752752590}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (45)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8771,7 +8843,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8789,8 +8861,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -8817,9 +8889,9 @@ GameObject:
   - component: {fileID: 1756759793}
   - component: {fileID: 1756759792}
   - component: {fileID: 1756759791}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (5)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8918,7 +8990,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8936,8 +9008,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -8964,9 +9036,9 @@ GameObject:
   - component: {fileID: 1766332571}
   - component: {fileID: 1766332570}
   - component: {fileID: 1766332569}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (55)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9065,7 +9137,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9083,8 +9155,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -9111,9 +9183,9 @@ GameObject:
   - component: {fileID: 1768842455}
   - component: {fileID: 1768842456}
   - component: {fileID: 1768842457}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (1)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9150,7 +9222,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9168,8 +9240,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -9258,9 +9330,9 @@ GameObject:
   - component: {fileID: 1781318299}
   - component: {fileID: 1781318298}
   - component: {fileID: 1781318297}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (40)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9359,7 +9431,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9377,8 +9449,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -9454,9 +9526,9 @@ GameObject:
   - component: {fileID: 1833259193}
   - component: {fileID: 1833259192}
   - component: {fileID: 1833259191}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (31)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9555,7 +9627,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9573,8 +9645,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -9601,9 +9673,9 @@ GameObject:
   - component: {fileID: 1852618211}
   - component: {fileID: 1852618210}
   - component: {fileID: 1852618209}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (34)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9702,7 +9774,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9720,8 +9792,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -9744,9 +9816,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1917496599}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bricks
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9838,9 +9910,9 @@ GameObject:
   - component: {fileID: 1919196028}
   - component: {fileID: 1919196027}
   - component: {fileID: 1919196026}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (21)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9939,7 +10011,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9957,8 +10029,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -9985,9 +10057,9 @@ GameObject:
   - component: {fileID: 1920460202}
   - component: {fileID: 1920460201}
   - component: {fileID: 1920460200}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (8)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10086,7 +10158,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10104,8 +10176,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -10237,9 +10309,9 @@ GameObject:
   - component: {fileID: 2071261158}
   - component: {fileID: 2071261157}
   - component: {fileID: 2071261156}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (14)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10338,7 +10410,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10356,8 +10428,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -10415,9 +10487,9 @@ GameObject:
   - component: {fileID: 2080129672}
   - component: {fileID: 2080129671}
   - component: {fileID: 2080129670}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (47)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10516,7 +10588,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10534,8 +10606,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
@@ -10562,9 +10634,9 @@ GameObject:
   - component: {fileID: 2136325875}
   - component: {fileID: 2136325874}
   - component: {fileID: 2136325873}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brick (32)
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10663,7 +10735,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10681,8 +10753,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1748706927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2707577370330349663, guid: 564dcb0f3984e94429ef712385b859b4,
     type: 3}
