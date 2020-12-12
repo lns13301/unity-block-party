@@ -105,7 +105,7 @@ public class Ball : MonoBehaviour
 
         if (collision.gameObject.tag == PADDLE_TAG)
         {
-            //rigidbody.AddForce(PADDLE_FORCE_UP_VALUE * ballSpeed);
+            reflectBall(collision.transform.position);
         }
     }
 
@@ -215,8 +215,8 @@ public class Ball : MonoBehaviour
         transform.position = RESET_BALL_POSITION;
     }
 
-/*    public void reflectBall(Vector3 objectPosition)
+    public void reflectBall(Vector3 objectPosition)
     {
-        rigidbody.AddForce((transform.position - objectPosition).normalized * ballSpeed);
-    }*/
+        rigidbody.AddForce((transform.position - objectPosition).normalized * ballSpeed / 30);
+    }
 }
