@@ -37,6 +37,7 @@ public class Brick : MonoBehaviour
     {
         brickStat.hp -= damage;
         SoundManager.instance.PlayOneShotEffectSound(0);
+        ParticleManager.instance.CreateEffect(transform.position, gameObject, 0);
 
         DestroyGameObject();
     }

@@ -33,7 +33,7 @@ public class ItemDatabase : MonoBehaviour
         itemDataFile.itemDatas = new List<Item>();
 
         //SaveItemData();
-        LoadItemData();
+        //LoadItemData();
 
         // 딕셔너리에 아이템 정보 입력
         for (int i = 0; i < itemDB.Count; i++)
