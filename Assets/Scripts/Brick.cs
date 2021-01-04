@@ -5,19 +5,25 @@ using UnityEngine;
 public class Brick : MonoBehaviour
 {
     private static string BALL_TAG = "Ball";
+    private static Vector2 SHAKE_POWER = new Vector2(0.03f, 0.05f);
 
     [SerializeField] private BrickStat brickStat;
+    [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private Material material;
 
     // Start is called before the first frame update
     void Start()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        material = spriteRenderer.material;
+
         brickStat.hp = 1;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        material.SetColor("_EmissionColor", Color.red * 10);
     }
 
     private bool isDestroy()
@@ -29,6 +35,7 @@ public class Brick : MonoBehaviour
     {
         if (isDestroy())
         {
+            CameraController.instance.PlayShakingCamera(SHAKE_POWER);
             Destroy(gameObject);
         }
     }
@@ -57,4 +64,6 @@ public class Brick : MonoBehaviour
             takeDamage(1);
         }
     }
+
+    
 }

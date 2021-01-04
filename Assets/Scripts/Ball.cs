@@ -6,14 +6,14 @@ public class Ball : MonoBehaviour
 {
     private static float MIN_SPEED = 250;
     private static float MIN_VELOCITY_SPEED = 1f;
-    private static float BALL_SPEED = 350;
+    private static float BALL_SPEED = 450;
     private static float CORRECT_BALL_SPEED = 30;
     private static float FORCE_POWER_X = 0.3f;
     private static float FORCE_POWER_Y = 0.9f;
     private static float FORCE_POWER_LEFT = 0.4f;
     private static float FORCE_POWER_RIGHT = -0.4f;
     private static float FORCE_POWER_ZERO = 0;
-    private static float GRAVITY_SCALE = 0.2f;
+    private static float GRAVITY_SCALE = 0;
     private static float CORRECT_VALUE = 0.8f;
     private static float BOTTOM_LINE_Y_LIMIT = -4.5f;
     private static float LEFT_LINE_X_LIMIT = -2.6f;
