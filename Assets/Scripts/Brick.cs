@@ -7,23 +7,38 @@ public class Brick : MonoBehaviour
     private static string BALL_TAG = "Ball";
     private static Vector2 SHAKE_POWER = new Vector2(0.03f, 0.05f);
 
+    private static Color BRICK_YELLOW_COLOR = new Color32(78, 83, 40, 50);
+    private static float INITIALIZE_COLOR_INTENSITY = 10f;
+
     [SerializeField] private BrickStat brickStat;
-    [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Material material;
 
     // Start is called before the first frame update
     void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        material = spriteRenderer.material;
+        material = GetComponent<SpriteRenderer>().material;
 
         brickStat.hp = 1;
+
+        StartCoroutine("ChangeGlow");
     }
 
     // Update is called once per frame
     void Update()
     {
-        material.SetColor("_EmissionColor", Color.red * 10);
+
+    }
+
+    IEnumerator ChangeGlow()
+    {
+        // 초기 Intensity 설정
+        material.SetVector("_EmissionColor", BRICK_YELLOW_COLOR * INITIALIZE_COLOR_INTENSITY);
+
+        while (true)
+        {
+            material.SetVector("_EmissionColor", BRICK_YELLOW_COLOR * MaterialManager.instance.GetColorValue());
+            yield return 0.1f;
+        }
     }
 
     private bool isDestroy()
@@ -44,7 +59,7 @@ public class Brick : MonoBehaviour
     {
         brickStat.hp -= damage;
         SoundManager.instance.PlayOneShotEffectSound(0);
-        ParticleManager.instance.CreateEffect(transform.position, gameObject, 0);
+        ParticleManager.instance.CreateEffect(transform.position, gameObject, 3);
 
         DestroyGameObject();
     }

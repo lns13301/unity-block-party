@@ -5,6 +5,7 @@ using UnityEngine;
 public class MaterialManager : MonoBehaviour
 {
     private float YIELD_RETURN_IMMEDIATELY = 0.05f;
+    private float COLOR_VALUE_CORRECTION = 0.5f;
 
     public static MaterialManager instance;
 
@@ -22,17 +23,16 @@ public class MaterialManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        StartCoroutine("SetIntenseTimer");
+        SetIntenseTimer();
     }
 
-    IEnumerator SetIntenseTimer()
+    private void SetIntenseTimer()
     {
-        if (isIntenseUp && colorValue > 3)
+        if (isIntenseUp && colorValue > 2)
         {
             isIntenseUp = false;
         }
-
-        if (!isIntenseUp && colorValue < 0)
+        else if (!isIntenseUp && colorValue < 0)
         {
             isIntenseUp = true;
         }
@@ -40,13 +40,16 @@ public class MaterialManager : MonoBehaviour
         if (isIntenseUp)
         {
             colorValue += Time.deltaTime;
-
-            yield return null;
         }
+        else
+        {
+            colorValue -= Time.deltaTime;
+        }
+    }
 
-        colorValue -= Time.deltaTime;
-
-        yield return null;
+    public float GetColorValue()
+    {
+        return colorValue * COLOR_VALUE_CORRECTION;
     }
 
 /*    IEnumerator InvokeGlow(Color[] color)
