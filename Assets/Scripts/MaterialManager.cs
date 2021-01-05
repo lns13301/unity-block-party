@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class MaterialManager : MonoBehaviour
 {
-    private float YIELD_RETURN_IMMEDIATELY = 0.05f;
-    private float COLOR_VALUE_CORRECTION = 0.5f;
+    private float COLOR_VALUE_MIN = 0;
+    private float COLOR_VALUE_MAX = 2;
+    private float COLOR_VALUE_CORRECTION = 0.8f;
 
     public static MaterialManager instance;
 
@@ -28,11 +29,11 @@ public class MaterialManager : MonoBehaviour
 
     private void SetIntenseTimer()
     {
-        if (isIntenseUp && colorValue > 2)
+        if (isIntenseUp && colorValue > COLOR_VALUE_MAX)
         {
             isIntenseUp = false;
         }
-        else if (!isIntenseUp && colorValue < 0)
+        else if (!isIntenseUp && colorValue < COLOR_VALUE_MIN)
         {
             isIntenseUp = true;
         }
@@ -51,10 +52,4 @@ public class MaterialManager : MonoBehaviour
     {
         return colorValue * COLOR_VALUE_CORRECTION;
     }
-
-/*    IEnumerator InvokeGlow(Color[] color)
-    {
-        brickEmission.hdr
-        brickEmission.SetVector("_EmissionColor", new Vector4(brickEmission.color.r, brickEmission.color.g, brickEmission.color.b, brickEmission.color.a) * colorTimer);
-    }*/
 }
