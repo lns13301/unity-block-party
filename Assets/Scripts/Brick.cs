@@ -20,7 +20,7 @@ public class Brick : MonoBehaviour
 
         brickStat.hp = 1;
 
-        StartCoroutine("ChangeGlow");
+       StartCoroutine("ChangeGlow");
     }
 
     // Update is called once per frame
@@ -41,6 +41,11 @@ public class Brick : MonoBehaviour
         }
     }
 
+    public void SetGlow()
+    {
+        material.SetVector("_EmissionColor", BRICK_YELLOW_COLOR * MaterialManager.instance.GetColorValue());
+    }
+
     private bool isDestroy()
     {
         return brickStat.hp <= 0;
@@ -59,7 +64,7 @@ public class Brick : MonoBehaviour
     {
         brickStat.hp -= damage;
         SoundManager.instance.PlayOneShotEffectSound(0);
-        ParticleManager.instance.CreateEffect(transform.position, gameObject, 3);
+        ParticleManager.instance.CreateParticleByType(gameObject, ParticleType.BRICK_BREAK_SKYBLUE);
 
         DestroyGameObject();
     }

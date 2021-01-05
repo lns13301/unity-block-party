@@ -84,7 +84,7 @@ GameObject:
   - component: {fileID: 6505338092035888530}
   - component: {fileID: 6505338092035888531}
   m_Layer: 0
-  m_Name: ExplosionBlue
+  m_Name: ExplosionSkyBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1443,8 +1443,8 @@ ParticleSystem:
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
         ctime0: 0
-        ctime1: 18119
-        ctime2: 49730
+        ctime1: 21395
+        ctime2: 52235
         ctime3: 65535
         ctime4: 0
         ctime5: 0
