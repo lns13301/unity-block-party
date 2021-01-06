@@ -19,6 +19,11 @@ public class WallCollider : MonoBehaviour
     {
         
     }
+
+    public Direction GetDirection()
+    {
+        return direction;
+    }
 }
 
 public enum Direction

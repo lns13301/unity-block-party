@@ -13,6 +13,15 @@ public class ParticleManager : MonoBehaviour
     private static int BRICK_BREAK_BLUE = 5;
     private static int BRICK_BREAK_PURPLE = 6;
 
+    private static Color BRICK_WHITE_COLOR = new Color32(255, 255, 255, 30);
+    private static Color BRICK_RED_COLOR = new Color32(191, 94, 93, 30);
+    private static Color BRICK_ORANGE_COLOR = new Color32(191, 120, 93, 30);
+    private static Color BRICK_YELLOW_COLOR = new Color32(191, 187, 93, 30);
+    private static Color BRICK_GREEN_COLOR = new Color32(103, 191, 93, 30);
+    private static Color BRICK_SKYBLUE_COLOR = new Color32(93, 194, 192, 30);
+    private static Color BRICK_BLUE_COLOR = new Color32(93, 104, 191, 30);
+    private static Color BRICK_PURPLE_COLOR = new Color32(135, 93, 191, 30);
+
     public GameObject[] effects;
     public static ParticleManager instance;
 
@@ -62,6 +71,36 @@ public class ParticleManager : MonoBehaviour
             case ParticleType.BRICK_BREAK_PURPLE:
                 CreateEffect(gameObject.transform.position, gameObject, BRICK_BREAK_PURPLE);
                 break;
+        }
+    }
+
+    public Color GetColorByParticleType(ParticleType particleType)
+    {
+        switch (particleType)
+        {
+            case ParticleType.BRICK_BREAK_RED:
+                CreateEffect(gameObject.transform.position, gameObject, BRICK_BREAK_RED);
+                return BRICK_RED_COLOR;
+            case ParticleType.BRICK_BREAK_ORANGE:
+                CreateEffect(gameObject.transform.position, gameObject, BRICK_BREAK_ORANGE);
+                return BRICK_ORANGE_COLOR;
+            case ParticleType.BRICK_BREAK_YELLOW:
+                CreateEffect(gameObject.transform.position, gameObject, BRICK_BREAK_YELLOW);
+                return BRICK_YELLOW_COLOR;
+            case ParticleType.BRICK_BREAK_GREEN:
+                CreateEffect(gameObject.transform.position, gameObject, BRICK_BREAK_GREEN);
+                return BRICK_GREEN_COLOR;
+            case ParticleType.BRICK_BREAK_SKYBLUE:
+                CreateEffect(gameObject.transform.position, gameObject, BRICK_BREAK_SKYBLUE);
+                return BRICK_SKYBLUE_COLOR;
+            case ParticleType.BRICK_BREAK_BLUE:
+                CreateEffect(gameObject.transform.position, gameObject, BRICK_BREAK_BLUE);
+                return BRICK_BLUE_COLOR;
+            case ParticleType.BRICK_BREAK_PURPLE:
+                CreateEffect(gameObject.transform.position, gameObject, BRICK_BREAK_PURPLE);
+                return BRICK_PURPLE_COLOR;
+            default:
+                return BRICK_WHITE_COLOR;
         }
     }
 }

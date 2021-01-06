@@ -6,7 +6,7 @@ public class MaterialManager : MonoBehaviour
 {
     private float COLOR_VALUE_MIN = 0;
     private float COLOR_VALUE_MAX = 2;
-    private float COLOR_VALUE_CORRECTION = 0.8f;
+    private float COLOR_VALUE_CORRECTION = 0.2f;
 
     public static MaterialManager instance;
 

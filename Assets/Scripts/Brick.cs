@@ -11,20 +11,21 @@ public class Brick : MonoBehaviour
     private static Vector2 SHAKE_POWER = new Vector2(0.0216f, 0.0384f);
     private static int DEAD_HEALTH = 0;
 
-    private static Color BRICK_YELLOW_COLOR = new Color32(78, 83, 40, 50);
-    private static float INITIALIZE_COLOR_INTENSITY = 1.6f;
+    private static float INITIALIZE_COLOR_INTENSITY = 1.2f;
 
     [SerializeField] private BrickStat brickStat;
     [SerializeField] private Material material;
     [SerializeField] private Color currentColor;
 
+    public ParticleType particleType;
+
     // Start is called before the first frame update
     void Start()
     {
         material = GetComponent<SpriteRenderer>().material;
-        currentColor = BRICK_YELLOW_COLOR;
+        currentColor = ParticleManager.instance.GetColorByParticleType(particleType);
 
-        brickStat.hp = 1;
+        brickStat.hp = 2;
 
        StartCoroutine("ChangeGlow");
     }
@@ -73,7 +74,7 @@ public class Brick : MonoBehaviour
     {
         brickStat.hp -= damage;
         SoundManager.instance.PlayOneShotEffectSound(0);
-        ParticleManager.instance.CreateParticleByType(gameObject, ParticleType.BRICK_BREAK_YELLOW);
+        ParticleManager.instance.CreateParticleByType(gameObject, particleType);
 
         if (brickStat.hp <= DEAD_HEALTH)
         {
@@ -95,5 +96,5 @@ public class Brick : MonoBehaviour
         {
             TakeDamage(1);
         }
-    }    
+    }
 }
