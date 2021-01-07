@@ -6,9 +6,9 @@ public class Ball : MonoBehaviour
 {
     private static float MIN_SPEED = 250;
     private static float MIN_VELOCITY_SPEED = 1f;
-    private static float BALL_SPEED = 0.07f;
-    private static float MAX_BALL_SPEED = 0.1f;
-    private static float BALL_SPEED_WEIGHT = 0.002f; // 패들에 튕긴 공의 속도 가중치
+    private static float BALL_SPEED = 0.2f;
+    private static float MAX_BALL_SPEED = 1f;
+    private static float BALL_SPEED_WEIGHT = 0.01f; // 패들에 튕긴 공의 속도 가중치
     private static float CORRECT_BALL_SPEED = 30;
     private static float FORCE_POWER_X = 0.3f;
     private static float FORCE_POWER_Y = 0.9f;
@@ -20,7 +20,7 @@ public class Ball : MonoBehaviour
     private static float BOTTOM_LINE_Y_LIMIT = -4.5f;
     private static float LEFT_LINE_X_LIMIT = -2.6f;
     private static float RIGHT_LINE_X_LIMIT = 2.6f;
-    private static float LINE_CHECK_TIMER_LIMIT = 4f;
+    private static float LINE_CHECK_TIMER_LIMIT = 2.5f;
     private static float LINE_CHECK_TIMER_RESET = 0;
     private static float RESET_FORCE_POWER = 0.4f;
     private static Vector2 RESET_BALL_POSITION = new Vector2(0f, -2f);
@@ -55,12 +55,14 @@ public class Ball : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-/*        BottomStateCheck();
+        MoveBall();
+
+        BottomStateCheck();
         LeftStateCheck();
         RightStateCheck();
-        TopStateCheck();*/
+        TopStateCheck();
     }
 
     IEnumerator Loop()
@@ -73,15 +75,10 @@ public class Ball : MonoBehaviour
         }
     }
 
-    IEnumerator MoveBall()
+    private void MoveBall()
     {
-        WaitForSeconds delay = new WaitForSeconds(0.005f);
-        while (true)
-        {
-            transform.position = new Vector2(transform.position.x + velocity.x, transform.position.y + velocity.y);
-            Debug.Log(velocity.x + ", " + velocity.y);
-            yield return delay;
-        }
+        transform.position = new Vector2(transform.position.x + velocity.x, transform.position.y + velocity.y);
+        Debug.Log(velocity.x + ", " + velocity.y);
     }
 
     private void CorrectVelocity()
@@ -132,39 +129,17 @@ public class Ball : MonoBehaviour
         StartCoroutine("MoveBall");
     }
 
-/*    public void BounceOffBallPaddle(Vector3 colliderPosition)
-    {
-        rigidbody.velocity = Vector2.zero;
-
-        lastForceX = transform.position.x - colliderPosition.x;
-        lastForceY = transform.position.y - colliderPosition.y;
-
-        rigidbody.AddForce(new Vector2(lastForceX, lastForceY).normalized * ballSpeed);
-    }*/
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag != BRICK_TAG)
+    /*    public void BounceOffBallPaddle(Vector3 colliderPosition)
         {
-            SoundManager.instance.PlayOneShotEffectSound(1);
-        }
-        else
-        {
-            ReflectBallByBrick(collision.transform.position);
-        }
+            rigidbody.velocity = Vector2.zero;
 
-        if (collision.gameObject.tag == PADDLE_TAG)
-        {
-            ReflectBallByPaddle(collision.transform.position);
-        }
+            lastForceX = transform.position.x - colliderPosition.x;
+            lastForceY = transform.position.y - colliderPosition.y;
 
-        if (collision.gameObject.tag == WALL_TAG)
-        {
-            ReflectBallByWall(collision.transform.position, collision.gameObject.GetComponent<WallCollider>().GetDirection());
-        }
-    }
+            rigidbody.AddForce(new Vector2(lastForceX, lastForceY).normalized * ballSpeed);
+        }*/
 
-    private void OnCollisionStay2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag != BRICK_TAG)
         {
@@ -186,7 +161,59 @@ public class Ball : MonoBehaviour
         }
     }
 
-    /*    public void ChangeDirection(Direction direction)
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == WALL_TAG)
+        {
+            ReflectBallByWall(collision.transform.position, collision.gameObject.GetComponent<WallCollider>().GetDirection());
+        }
+    }
+
+    /*    private void OnCollisionEnter2D(Collision2D collision)
+        {
+            if (collision.gameObject.tag != BRICK_TAG)
+            {
+                SoundManager.instance.PlayOneShotEffectSound(1);
+            }
+            else
+            {
+                ReflectBallByBrick(collision.transform.position);
+            }
+
+            if (collision.gameObject.tag == PADDLE_TAG)
+            {
+                ReflectBallByPaddle(collision.transform.position);
+            }
+
+            if (collision.gameObject.tag == WALL_TAG)
+            {
+                ReflectBallByWall(collision.transform.position, collision.gameObject.GetComponent<WallCollider>().GetDirection());
+            }
+        }
+
+        private void OnCollisionStay2D(Collision2D collision)
+        {
+            if (collision.gameObject.tag != BRICK_TAG)
+            {
+                SoundManager.instance.PlayOneShotEffectSound(1);
+            }
+            else
+            {
+                ReflectBallByBrick(collision.transform.position);
+            }
+
+            if (collision.gameObject.tag == PADDLE_TAG)
+            {
+                ReflectBallByPaddle(collision.transform.position);
+            }
+
+            if (collision.gameObject.tag == WALL_TAG)
+            {
+                ReflectBallByWall(collision.transform.position, collision.gameObject.GetComponent<WallCollider>().GetDirection());
+            }
+        }*/
+
+    /*public void ChangeDirection(Direction direction)
     {
         rigidbody.velocity = Vector2.zero;
         ballSpeed = BALL_SPEED;
@@ -211,77 +238,86 @@ public class Ball : MonoBehaviour
     }*/
 
     // 버그 발생시 조정
-    /*    private void TopStateCheck()
+    private void TopStateCheck()
+    {
+        if (transform.position.y > -BOTTOM_LINE_Y_LIMIT)
         {
-            if (transform.position.y > -BOTTOM_LINE_Y_LIMIT)
-            {
-                bottomStateTimer += Time.deltaTime;
-            }
-            else
-            {
-                bottomStateTimer = LINE_CHECK_TIMER_RESET;
-            }
-
-            if (bottomStateTimer > LINE_CHECK_TIMER_LIMIT)
-            {
-                AddForceBall(RESET_FORCE_POWER, FORCE_POWER_Y);
-                bottomStateTimer = LINE_CHECK_TIMER_RESET;
-            }
+            bottomStateTimer += Time.deltaTime;
+        }
+        else
+        {
+            bottomStateTimer = LINE_CHECK_TIMER_RESET;
         }
 
-        private void BottomStateCheck()
+        if (bottomStateTimer > LINE_CHECK_TIMER_LIMIT)
         {
-            if (transform.position.y < BOTTOM_LINE_Y_LIMIT)
-            {
-                bottomStateTimer += Time.deltaTime;
-            }
-            else
-            {
-                bottomStateTimer = LINE_CHECK_TIMER_RESET;
-            }
+            ballSpeed *= 0.7f;
+            transform.position = Vector2.zero;
+            velocity = new Vector2(FORCE_POWER_X, FORCE_POWER_Y) * ballSpeed;
 
-            if (bottomStateTimer > LINE_CHECK_TIMER_LIMIT)
-            {
-                AddForceBall(RESET_FORCE_POWER, FORCE_POWER_Y);
-                bottomStateTimer = LINE_CHECK_TIMER_RESET;
-            }
+            bottomStateTimer = LINE_CHECK_TIMER_RESET;
+        }
+    }
+
+    private void BottomStateCheck()
+    {
+        if (transform.position.y < BOTTOM_LINE_Y_LIMIT)
+        {
+            bottomStateTimer += Time.deltaTime;
+        }
+        else
+        {
+            bottomStateTimer = LINE_CHECK_TIMER_RESET;
         }
 
-        private void LeftStateCheck()
+        if (bottomStateTimer > LINE_CHECK_TIMER_LIMIT)
         {
-            if (transform.position.x < LEFT_LINE_X_LIMIT)
-            {
-                leftStateTimer += Time.deltaTime;
-            }
-            else
-            {
-                leftStateTimer = LINE_CHECK_TIMER_RESET;
-            }
+            ballSpeed *= 0.7f;
+            transform.position = Vector2.zero;
+            velocity = new Vector2(FORCE_POWER_X, FORCE_POWER_Y) * ballSpeed;
+            bottomStateTimer = LINE_CHECK_TIMER_RESET;
+        }
+    }
 
-            if (leftStateTimer > LINE_CHECK_TIMER_LIMIT)
-            {
-                AddForceBall(FORCE_POWER_LEFT, RESET_FORCE_POWER);
-                leftStateTimer = LINE_CHECK_TIMER_RESET;
-            }
+    private void LeftStateCheck()
+    {
+        if (transform.position.x < LEFT_LINE_X_LIMIT)
+        {
+            leftStateTimer += Time.deltaTime;
+        }
+        else
+        {
+            leftStateTimer = LINE_CHECK_TIMER_RESET;
         }
 
-        private void RightStateCheck()
+        if (leftStateTimer > LINE_CHECK_TIMER_LIMIT)
         {
-            if (transform.position.x > RIGHT_LINE_X_LIMIT)
-            {
-                rightStateTimer += Time.deltaTime;
-            }
-            else
-            {
-                rightStateTimer = LINE_CHECK_TIMER_RESET;
-            }
+            ballSpeed *= 0.7f;
+            transform.position = Vector2.zero;
+            velocity = new Vector2(FORCE_POWER_X, FORCE_POWER_Y) * ballSpeed;
+            leftStateTimer = LINE_CHECK_TIMER_RESET;
+        }
+    }
 
-            if (rightStateTimer > LINE_CHECK_TIMER_LIMIT)
-            {
-                AddForceBall(FORCE_POWER_RIGHT, RESET_FORCE_POWER);
-                rightStateTimer = LINE_CHECK_TIMER_RESET;
-            }
-        }*/
+    private void RightStateCheck()
+    {
+        if (transform.position.x > RIGHT_LINE_X_LIMIT)
+        {
+            rightStateTimer += Time.deltaTime;
+        }
+        else
+        {
+            rightStateTimer = LINE_CHECK_TIMER_RESET;
+        }
+
+        if (rightStateTimer > LINE_CHECK_TIMER_LIMIT)
+        {
+            ballSpeed *= 0.7f;
+            transform.position = Vector2.zero;
+            velocity = new Vector2(FORCE_POWER_X, FORCE_POWER_Y) * ballSpeed;
+            rightStateTimer = LINE_CHECK_TIMER_RESET;
+        }
+    }
 
     /*    private void AddForceBall(float powerX, float powerY)
         {

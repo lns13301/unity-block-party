@@ -79,25 +79,18 @@ public class ParticleManager : MonoBehaviour
         switch (particleType)
         {
             case ParticleType.BRICK_BREAK_RED:
-                CreateEffect(gameObject.transform.position, gameObject, BRICK_BREAK_RED);
                 return BRICK_RED_COLOR;
             case ParticleType.BRICK_BREAK_ORANGE:
-                CreateEffect(gameObject.transform.position, gameObject, BRICK_BREAK_ORANGE);
                 return BRICK_ORANGE_COLOR;
             case ParticleType.BRICK_BREAK_YELLOW:
-                CreateEffect(gameObject.transform.position, gameObject, BRICK_BREAK_YELLOW);
                 return BRICK_YELLOW_COLOR;
             case ParticleType.BRICK_BREAK_GREEN:
-                CreateEffect(gameObject.transform.position, gameObject, BRICK_BREAK_GREEN);
                 return BRICK_GREEN_COLOR;
             case ParticleType.BRICK_BREAK_SKYBLUE:
-                CreateEffect(gameObject.transform.position, gameObject, BRICK_BREAK_SKYBLUE);
                 return BRICK_SKYBLUE_COLOR;
             case ParticleType.BRICK_BREAK_BLUE:
-                CreateEffect(gameObject.transform.position, gameObject, BRICK_BREAK_BLUE);
                 return BRICK_BLUE_COLOR;
             case ParticleType.BRICK_BREAK_PURPLE:
-                CreateEffect(gameObject.transform.position, gameObject, BRICK_BREAK_PURPLE);
                 return BRICK_PURPLE_COLOR;
             default:
                 return BRICK_WHITE_COLOR;
