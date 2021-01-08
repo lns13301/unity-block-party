@@ -15074,7 +15074,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.5
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 000000006f263b68
+  m_ApplyToSortingLayers: 000000006f263b6817e91aca
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -21253,6 +21253,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1031091356
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1031091357}
+  - component: {fileID: 1031091358}
+  m_Layer: 0
+  m_Name: DropManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1031091357
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031091356}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2079536220}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1031091358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031091356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bd98a603b8b01345b706176fb167651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropItems:
+  - {fileID: 4347461648513397582, guid: 6b8827c4f0c4c0d4a93349a60c17c70d, type: 3}
 --- !u!1 &1048711739
 GameObject:
   m_ObjectHideFlags: 0
@@ -21269,7 +21314,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1048711740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26672,7 +26717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa5f45beffb25bd4e9245589a320d8b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effects:
+  particles:
   - {fileID: 6505338092035888528, guid: 369fa0ea74517654581ee51303a6859c, type: 3}
   - {fileID: 6505338092035888528, guid: 58de45b8c1088c640ac07e342783e2af, type: 3}
   - {fileID: 6505338092035888528, guid: a9349dcbc971b7941b58fd57c42e2d14, type: 3}
@@ -42007,6 +42052,7 @@ Transform:
   - {fileID: 1125275605}
   - {fileID: 1282784596}
   - {fileID: 1252399553}
+  - {fileID: 1031091357}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

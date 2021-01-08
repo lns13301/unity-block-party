@@ -5,6 +5,7 @@ using UnityEngine;
 public class Paddle : MonoBehaviour
 {
     private static string BALL_TAG = "Ball";
+    private static string DROP_ITEM_TAG = "DropItem";
 
     // Start is called before the first frame update
     void Start()
@@ -18,12 +19,11 @@ public class Paddle : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-/*        if (collision.gameObject.tag == BALL_TAG)
+        if (collision.gameObject.tag == DROP_ITEM_TAG)
         {
-            collision.gameObject.GetComponent<Ball>().reflectBall(transform.position);
-            // collision.gameObject.GetComponent<Ball>().BounceOffBallPaddle(transform.position);
-        }*/
+            collision.GetComponent<DropItem>().GetDropItem();
+        }
     }
 }

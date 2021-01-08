@@ -405,7 +405,6 @@ public class Ball : MonoBehaviour
 
     public void ReflectBallByBrick(Vector3 objectPosition)
     {
-        Debug.Log("실행됨");
         velocity = new Vector2(velocity.x, -velocity.y);
     }
 }

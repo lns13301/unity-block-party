@@ -8,6 +8,7 @@ TagManager:
   - Brick
   - Paddle
   - Wall
+  - DropItem
   layers:
   - Default
   - TransparentFX
@@ -50,4 +51,7 @@ TagManager:
     locked: 0
   - name: Particle
     uniqueID: 568592205
+    locked: 0
+  - name: DropItem
+    uniqueID: 3390761239
     locked: 0

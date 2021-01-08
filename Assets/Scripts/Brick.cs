@@ -13,6 +13,9 @@ public class Brick : MonoBehaviour
 
     private static float INITIALIZE_COLOR_INTENSITY = 1.2f;
 
+    private static int DROP_ITEM_POWER = 0;
+    private static float DROP_ITEM_POWER_CHANCE = 10;
+
     [SerializeField] private BrickStat brickStat;
     [SerializeField] private Material material;
     [SerializeField] private Color currentColor;
@@ -65,6 +68,7 @@ public class Brick : MonoBehaviour
         if (IsDestroy())
         {
             CameraController.instance.PlayShakingCamera(SHAKE_POWER);
+            DropManager.instance.CreateDropItem(transform.position, gameObject, DROP_ITEM_POWER, DROP_ITEM_POWER_CHANCE);
             // StartCoroutine("StopGameTemporary");
             Destroy(gameObject);
         }

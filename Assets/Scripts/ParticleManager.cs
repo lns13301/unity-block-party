@@ -22,7 +22,7 @@ public class ParticleManager : MonoBehaviour
     private static Color BRICK_BLUE_COLOR = new Color32(93, 104, 191, 30);
     private static Color BRICK_PURPLE_COLOR = new Color32(135, 93, 191, 30);
 
-    public GameObject[] effects;
+    public GameObject[] particles;
     public static ParticleManager instance;
 
     // Start is called before the first frame update
@@ -37,12 +37,12 @@ public class ParticleManager : MonoBehaviour
         
     }
 
-    public void CreateEffect(Vector2 position, GameObject gameObject, int index = 0)
+    public void CreateParticle(Vector2 position, GameObject gameObject, int index = 0)
     {
-        GameObject effect = Instantiate(effects[index]);
-        effect.transform.SetParent(gameObject.transform.parent);
-        effect.transform.position = position;
-        effect.transform.localScale = new Vector3(1, 1, 1);
+        GameObject particle = Instantiate(particles[index]);
+        particle.transform.SetParent(gameObject.transform.parent);
+        particle.transform.position = position;
+        particle.transform.localScale = new Vector3(1, 1, 1);
     }
 
     // 해당 프로젝트용 메소드
@@ -51,25 +51,25 @@ public class ParticleManager : MonoBehaviour
         switch (particleType)
         {
             case ParticleType.BRICK_BREAK_RED:
-                CreateEffect(gameObject.transform.position, gameObject, BRICK_BREAK_RED);
+                CreateParticle(gameObject.transform.position, gameObject, BRICK_BREAK_RED);
                 break;
             case ParticleType.BRICK_BREAK_ORANGE:
-                CreateEffect(gameObject.transform.position, gameObject, BRICK_BREAK_ORANGE);
+                CreateParticle(gameObject.transform.position, gameObject, BRICK_BREAK_ORANGE);
                 break;
             case ParticleType.BRICK_BREAK_YELLOW:
-                CreateEffect(gameObject.transform.position, gameObject, BRICK_BREAK_YELLOW);
+                CreateParticle(gameObject.transform.position, gameObject, BRICK_BREAK_YELLOW);
                 break;
             case ParticleType.BRICK_BREAK_GREEN:
-                CreateEffect(gameObject.transform.position, gameObject, BRICK_BREAK_GREEN);
+                CreateParticle(gameObject.transform.position, gameObject, BRICK_BREAK_GREEN);
                 break;
             case ParticleType.BRICK_BREAK_SKYBLUE:
-                CreateEffect(gameObject.transform.position, gameObject, BRICK_BREAK_SKYBLUE);
+                CreateParticle(gameObject.transform.position, gameObject, BRICK_BREAK_SKYBLUE);
                 break;
             case ParticleType.BRICK_BREAK_BLUE:
-                CreateEffect(gameObject.transform.position, gameObject, BRICK_BREAK_BLUE);
+                CreateParticle(gameObject.transform.position, gameObject, BRICK_BREAK_BLUE);
                 break;
             case ParticleType.BRICK_BREAK_PURPLE:
-                CreateEffect(gameObject.transform.position, gameObject, BRICK_BREAK_PURPLE);
+                CreateParticle(gameObject.transform.position, gameObject, BRICK_BREAK_PURPLE);
                 break;
         }
     }
