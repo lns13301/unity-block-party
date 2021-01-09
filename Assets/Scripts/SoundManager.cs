@@ -35,7 +35,12 @@ public class SoundManager : MonoBehaviour
 
     public void PlayMusic(int index)
     {
-        StopAllSounds();
+        sound[index].PlaySound();
+    }
+
+    public void PlayMusicOnly(int index)
+    {
+        StopAllMusics();
         sound[index].PlaySound();
     }
 
@@ -50,7 +55,7 @@ public class SoundManager : MonoBehaviour
         effectSound[index].PlaySound();
     }
 
-    public void StopSound(int index)
+    public void StopMusic(int index)
     {
         sound[index].StopSound();
     }
@@ -67,11 +72,24 @@ public class SoundManager : MonoBehaviour
         isMapChanged = true;
     }
 
+    public void StopAllMusics()
+    {
+        for (int i = 0; i < sound.Length; i++)
+        {
+            sound[i].StopSound();
+        }
+    }
+
     public void StopAllSounds()
     {
         for (int i = 0; i < sound.Length; i++)
         {
             sound[i].StopSound();
+        }
+
+        for (int i = 0; i < sound.Length; i++)
+        {
+            effectSound[i].StopSound();
         }
     }
 

@@ -56,6 +56,8 @@ public class DropItem : MonoBehaviour
     // 아이템 획득 처리
     public void GetDropItem()
     {
+        SoundManager.instance.PlayOneShotEffectSound(2);
+
         Destroy(gameObject);
     }
 

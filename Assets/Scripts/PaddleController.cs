@@ -49,8 +49,6 @@ public class PaddleController : MonoBehaviour
         InitializeGameObject(GameObject.Find("Paddles"), paddles);
         InitializeGameObject(GameObject.Find("Balls"), balls);
         StartCoroutine("Loop");
-
-        SoundManager.instance.PlayMusic(0);
     }
 
     IEnumerator Loop()
