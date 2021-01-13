@@ -9,6 +9,7 @@ TagManager:
   - Paddle
   - Wall
   - DropItem
+  - TMP Camera
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - 
   - 
   - Brick
-  - 
+  - TMP
   - 
   - 
   - 
@@ -46,6 +47,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ball
+    uniqueID: 2584943695
+    locked: 0
+  - name: Paddle
+    uniqueID: 2309506995
+    locked: 0
   - name: Brick
     uniqueID: 1748706927
     locked: 0
@@ -54,4 +61,7 @@ TagManager:
     locked: 0
   - name: DropItem
     uniqueID: 3390761239
+    locked: 0
+  - name: TMP
+    uniqueID: 1213458909
     locked: 0
