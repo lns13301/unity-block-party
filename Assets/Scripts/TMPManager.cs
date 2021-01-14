@@ -34,7 +34,7 @@ public class TMPManager : MonoBehaviour
         }
         catch
         {
-
+            tmp.GetComponent<DamageText>().SetText(text);
         }
     }
 }

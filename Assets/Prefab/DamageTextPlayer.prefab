@@ -219,11 +219,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76b74feef053bef4f952b7330c1ce930, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speedX: 0
+  speedY: 0.5
   alphaSpeed: 3
+  scaleSpeed: 3
   destroyTimer: 1
   text: {fileID: 0}
   alpha: {r: 0, g: 0, b: 0, a: 0}
+  localScale: {x: 0, y: 0, z: 0}
   damage: 0
   sortingLayer: TMP
   sortingOrder: 11
+  isMovingX: 1

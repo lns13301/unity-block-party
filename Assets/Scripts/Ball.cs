@@ -77,8 +77,12 @@ public class Ball : MonoBehaviour
 
     private void MoveBall()
     {
-        transform.position = new Vector2(transform.position.x + velocity.x, transform.position.y + velocity.y);
-        Debug.Log(velocity.x + ", " + velocity.y);
+        float timeScale = Time.timeScale;
+
+        if (velocity != Vector2.zero)
+        {
+            transform.position = new Vector2((transform.position.x + velocity.x), (transform.position.y + velocity.y));
+        }
     }
 
     private void CorrectVelocity()
