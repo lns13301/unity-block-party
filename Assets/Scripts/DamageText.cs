@@ -19,6 +19,7 @@ public class DamageText : MonoBehaviour
     void Start()
     {
         text = GetComponent<TextMeshPro>();
+
         if (damage == 0)
         {
             text.text = "Miss";
@@ -45,5 +46,10 @@ public class DamageText : MonoBehaviour
     private void DestroyObject()
     {
         Destroy(gameObject);
+    }
+    
+    public void SetDamage(int damage)
+    {
+        this.damage = damage;
     }
 }

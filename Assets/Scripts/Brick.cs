@@ -79,6 +79,7 @@ public class Brick : MonoBehaviour
         brickStat.hp -= damage;
         SoundManager.instance.PlayOneShotEffectSound(0);
         ParticleManager.instance.CreateParticleByType(gameObject, particleType);
+        TMPManager.instance.CreateText(damage.ToString(), gameObject, transform.position);
 
         if (brickStat.hp <= DEAD_HEALTH)
         {
