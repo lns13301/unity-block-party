@@ -43,6 +43,7 @@ public class Ball : MonoBehaviour
 
     [SerializeField] private Vector2 velocity;
     [SerializeField] private float ballSpeedWeight;
+    [SerializeField] private Direction lastCollisionWall;
 
     // Start is called before the first frame update
     void Start()
@@ -152,24 +153,39 @@ public class Ball : MonoBehaviour
         else
         {
             ReflectBallByBrick(collision.transform.position);
+            lastCollisionWall = Direction.BRICK;
         }
 
         if (collision.gameObject.tag == PADDLE_TAG)
         {
             ReflectBallByPaddle(collision.transform.position);
+            lastCollisionWall = Direction.PADDLE;
         }
 
         if (collision.gameObject.tag == WALL_TAG)
         {
+            if (collision.GetComponent<WallCollider>().GetDirection() == lastCollisionWall)
+            {
+                return;
+            }
+
             ReflectBallByWall(collision.transform.position, collision.gameObject.GetComponent<WallCollider>().GetDirection());
+            lastCollisionWall = collision.GetComponent<WallCollider>().GetDirection();
         }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
+
         if (collision.gameObject.tag == WALL_TAG)
         {
+            if (collision.GetComponent<WallCollider>().GetDirection() == lastCollisionWall)
+            {
+                return;
+            }
+
             ReflectBallByWall(collision.transform.position, collision.gameObject.GetComponent<WallCollider>().GetDirection());
+            lastCollisionWall = collision.GetComponent<WallCollider>().GetDirection();
         }
     }
 

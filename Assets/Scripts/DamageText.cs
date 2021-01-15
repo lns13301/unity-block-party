@@ -135,8 +135,8 @@ public class DamageText : MonoBehaviour
 
     public void SetScaleDown()
     {
-        localScale.x = Mathf.Lerp(localScale.x, textMinSize, Time.deltaTime * scaleSpeed / 3);
-        localScale.y = Mathf.Lerp(localScale.y, textMinSize, Time.deltaTime * scaleSpeed / 3);
+        localScale.x = Mathf.Lerp(localScale.x, textMinSize, Time.deltaTime * scaleSpeed / 5);
+        localScale.y = Mathf.Lerp(localScale.y, textMinSize, Time.deltaTime * scaleSpeed / 5);
 
         GetComponent<RectTransform>().localScale = localScale;
     }

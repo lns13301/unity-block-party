@@ -2331,8 +2331,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 9125979946664914719, guid: 61f8fe0c93a53c34b92762fae20fa290,
-    type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2340,7 +2339,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &130066753
@@ -2355,7 +2354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79457743f76fad34e99ad5db9de06634, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: 0
+  direction: 1
 --- !u!1 &140451648
 GameObject:
   m_ObjectHideFlags: 0
@@ -5569,7 +5568,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.16}
+    oldSize: {x: 2.56, y: 2.56}
     newSize: {x: 0.32, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5638,8 +5637,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 9125979946664914719, guid: 61f8fe0c93a53c34b92762fae20fa290,
-    type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5647,7 +5645,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &324227428
@@ -5662,7 +5660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79457743f76fad34e99ad5db9de06634, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: 1
+  direction: 2
 --- !u!1 &332447299
 GameObject:
   m_ObjectHideFlags: 0
@@ -8089,6 +8087,7 @@ MonoBehaviour:
   rightStateTimer: 0
   velocity: {x: 0, y: 0}
   ballSpeedWeight: 0
+  lastCollisionWall: 0
 --- !u!1 &458329004
 GameObject:
   m_ObjectHideFlags: 0
@@ -9481,7 +9480,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1080, y: 1920}
+  m_ReferenceResolution: {x: 1080, y: 2160}
   m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -17843,8 +17842,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 9125979946664914719, guid: 61f8fe0c93a53c34b92762fae20fa290,
-    type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -17852,7 +17850,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &866212537
@@ -17867,7 +17865,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79457743f76fad34e99ad5db9de06634, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: 2
+  direction: 3
 --- !u!1 &880437767
 GameObject:
   m_ObjectHideFlags: 0
@@ -21377,7 +21375,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraTimer: 0
-  shakePower: {x: 0, y: 0}
+  shakePower: {x: 0, y: 0, z: 0}
+  shackingBackUpPosition: {x: 0, y: 0, z: 0}
+  isShacking: 0
+  resolutionDivideValue: 0
 --- !u!114 &1033941478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23732,8 +23733,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 9125979946664914719, guid: 61f8fe0c93a53c34b92762fae20fa290,
-    type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -23741,7 +23741,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1117575921
@@ -23756,7 +23756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79457743f76fad34e99ad5db9de06634, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: 3
+  direction: 4
 --- !u!1 &1125275604
 GameObject:
   m_ObjectHideFlags: 0
@@ -31310,7 +31310,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraTimer: 0
-  shakePower: {x: 0, y: 0}
+  shakePower: {x: 0, y: 0, z: 0}
+  shackingBackUpPosition: {x: 0, y: 0, z: 0}
+  isShacking: 0
+  resolutionDivideValue: 0
 --- !u!114 &1501992836
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -28,8 +28,11 @@ public class WallCollider : MonoBehaviour
 
 public enum Direction
 {
+    NONE,
     LEFT,
     RIGHT,
     TOP,
-    BOTTOM
+    BOTTOM,
+    BRICK,
+    PADDLE
 }

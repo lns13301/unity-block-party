@@ -25,7 +25,7 @@ public class PaddleController : MonoBehaviour
 #if (UNITY_ANDROID)
     void Awake()
     {
-        Screen.SetResolution(1080, 1920, false);
+        // Screen.SetResolution(1080, 1920, false);
     }
 #else
     void Awake()
@@ -66,10 +66,11 @@ public class PaddleController : MonoBehaviour
         if (Input.GetMouseButton(FIRST_TOUCH) || (Input.touchCount == TOUCH_COUNT && Input.GetTouch(FIRST_TOUCH).phase == TouchPhase.Moved))
         {
             paddleX = Mathf.Clamp(Camera.main.ScreenToWorldPoint(
-                Input.GetMouseButton(FIRST_TOUCH) ? 
-                Input.mousePosition : (Vector3) Input.GetTouch(FIRST_TOUCH).position).x, -paddleBorder, paddleBorder);
+                Input.GetMouseButton(FIRST_TOUCH) ? Input.mousePosition : (Vector3) Input.GetTouch(FIRST_TOUCH).position
+                ).x, -paddleBorder, paddleBorder);
 
             paddleTransform.position = new Vector2(paddleX, paddleTransform.position.y);
+            CameraController.instance.MovePositionWithPaddle(paddleTransform.position);
 
             if (!isStart)
             {

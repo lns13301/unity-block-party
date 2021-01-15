@@ -9,21 +9,11 @@ public class GameManager : MonoBehaviour
     {
         SoundManager.instance.PlayMusic(0);
         SoundManager.instance.PlayMusic(1);
-
-        OnApplicationFocus(true);
     }
 
     // Update is called once per frame
     void Update()
     {
         
-    }
-
-    void OnApplicationFocus(bool focusStatus)
-    {
-        if (focusStatus)
-        {
-            DisableSystemUI.DisableNavUI();
-        }
     }
 }
