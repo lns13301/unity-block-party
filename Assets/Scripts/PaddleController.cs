@@ -11,6 +11,7 @@ public class PaddleController : MonoBehaviour
     private static float PADDLE_BORDER = 2.17f;
     private static float BALL_STOP_SPEED = 0;
     private static float DEFAULT_PADDLE_SCALE = 2;
+    private static float UI_POSITION_Y = 180;
 
     public static PaddleController instance;
     [SerializeField] private float paddleBorder = PADDLE_BORDER;
@@ -65,6 +66,7 @@ public class PaddleController : MonoBehaviour
     {
         if (Input.GetMouseButton(FIRST_TOUCH) || (Input.touchCount == TOUCH_COUNT && Input.GetTouch(FIRST_TOUCH).phase == TouchPhase.Moved))
         {
+
             paddleX = Mathf.Clamp(Camera.main.ScreenToWorldPoint(
                 Input.GetMouseButton(FIRST_TOUCH) ? Input.mousePosition : (Vector3) Input.GetTouch(FIRST_TOUCH).position
                 ).x, -paddleBorder, paddleBorder);

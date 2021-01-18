@@ -23,6 +23,8 @@ public class DropItem : MonoBehaviour
     [SerializeField] private Item item;
     [SerializeField] private Material material;
     [SerializeField] private Color currentColor;
+    [SerializeField] private float timer = 0;
+    [SerializeField] private float destroyTime;
 
     public ColorType colorType;
     public float colorValue = 0;
@@ -41,6 +43,17 @@ public class DropItem : MonoBehaviour
     {
         SetIntenseTimer();
         AddGravity();
+        DestroyObject();
+    }
+
+    public void DestroyObject()
+    {
+        timer += Time.deltaTime;
+
+        if (timer > destroyTime)
+        {
+            Destroy(gameObject);
+        }
     }
 
     IEnumerator ChangeGlow()

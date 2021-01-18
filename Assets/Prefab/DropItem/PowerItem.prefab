@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4347461648513397584}
   - component: {fileID: 4347461648513397585}
   m_Layer: 0
-  m_Name: DropItem
+  m_Name: PowerItem
   m_TagString: DropItem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -904206057
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 1414468899322695829, guid: 04cf80f9c0304834f85664f49d1f5d36,
     type: 3}
@@ -108,6 +108,8 @@ MonoBehaviour:
     sprite: {fileID: 0}
   material: {fileID: 0}
   currentColor: {r: 0, g: 0, b: 0, a: 0}
+  timer: 0
+  destroyTime: 10
   colorType: 0
   colorValue: 0
   isIntenseUp: 1

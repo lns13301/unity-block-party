@@ -152,6 +152,13 @@ public class Ball : MonoBehaviour
         }
         else
         {
+            if (collision.gameObject.tag == BRICK_TAG && lastCollisionWall == Direction.BRICK)
+            {
+                ReflectBallByBrick(collision.transform.position, true);
+
+                return;
+            }
+
             ReflectBallByBrick(collision.transform.position);
             lastCollisionWall = Direction.BRICK;
         }
@@ -176,7 +183,6 @@ public class Ball : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-
         if (collision.gameObject.tag == WALL_TAG)
         {
             if (collision.GetComponent<WallCollider>().GetDirection() == lastCollisionWall)
@@ -423,8 +429,15 @@ public class Ball : MonoBehaviour
         }
     }
 
-    public void ReflectBallByBrick(Vector3 objectPosition)
+    public void ReflectBallByBrick(Vector3 objectPosition, bool isChangeOnlyX = false)
     {
-        velocity = new Vector2(velocity.x, -velocity.y);
+        if (isChangeOnlyX)
+        {
+            velocity = new Vector2(-velocity.x, velocity.y);
+        }
+        else
+        {
+            velocity = new Vector2(velocity.x, -velocity.y);
+        }
     }
 }
