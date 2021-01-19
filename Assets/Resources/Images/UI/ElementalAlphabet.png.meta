@@ -1,34 +1,31 @@
 fileFormatVersion: 2
-guid: 430d74a6a9e32334d89e87451a00092f
+guid: 4288f5b0afdfb1c42bdd9b0e0731e2a7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5653658130846817501
-    second: UI_GameScene_0
+      213: 4888094590901451556
+    second: ElementalAlphabet_0
   - first:
-      213: 8405925605837296166
-    second: UI_GameScene_1
+      213: -1927902515650939593
+    second: ElementalAlphabet_1
   - first:
-      213: 4962475479511587376
-    second: UI_GameScene_2
+      213: -5695856868297860158
+    second: ElementalAlphabet_2
   - first:
-      213: 8902998032166830511
-    second: UI_GameScene_3
+      213: 7271971953411330215
+    second: ElementalAlphabet_3
   - first:
-      213: -6413720283229468719
-    second: UI_GameScene_4
+      213: -2659194168164509412
+    second: ElementalAlphabet_4
   - first:
-      213: 431371130659238191
-    second: UI_GameScene_5
+      213: 6617155436797825890
+    second: ElementalAlphabet_5
   - first:
-      213: 4138336886021859476
-    second: UI_GameScene_6
+      213: -4946823006665747259
+    second: ElementalAlphabet_6
   - first:
-      213: -5251072056405395053
-    second: UI_GameScene_7
-  - first:
-      213: 3075535431106775953
-    second: UI_GameScene_8
+      213: 508838351463638178
+    second: ElementalAlphabet_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -88,7 +85,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -100,7 +97,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -112,7 +109,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: iPhone
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -124,7 +121,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -138,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI_GameScene_0
+      name: ElementalAlphabet_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 1875
-        width: 144
-        height: 144
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddc9f9a9d14d57e40800000000000000
-      internalID: 5653658130846817501
+      spriteID: 42b7037d12006d340800000000000000
+      internalID: 4888094590901451556
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameScene_1
+      name: ElementalAlphabet_1
       rect:
         serializedVersion: 2
-        x: 202
-        y: 1997
-        width: 27
-        height: 26
+        x: 16
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +170,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 622da405dc8d7a470800000000000000
-      internalID: 8405925605837296166
+      spriteID: 7353b0160e6be35e0800000000000000
+      internalID: -1927902515650939593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameScene_2
+      name: ElementalAlphabet_2
       rect:
         serializedVersion: 2
-        x: 380
-        y: 1995
-        width: 32
-        height: 32
+        x: 32
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +191,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03adfd208214ed440800000000000000
-      internalID: 4962475479511587376
+      spriteID: 2cb13a13b5044f0b0800000000000000
+      internalID: -5695856868297860158
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameScene_3
+      name: ElementalAlphabet_3
       rect:
         serializedVersion: 2
-        x: 198
-        y: 1947
-        width: 36
-        height: 29
+        x: 48
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +212,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa14e474a8dcd8b70800000000000000
-      internalID: 8902998032166830511
+      spriteID: 7a09fab86fb3be460800000000000000
+      internalID: 7271971953411330215
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameScene_4
+      name: ElementalAlphabet_4
       rect:
         serializedVersion: 2
-        x: 200
-        y: 1893
-        width: 34
-        height: 34
+        x: 64
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,20 +233,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d7c36d3263edf6a0800000000000000
-      internalID: -6413720283229468719
+      spriteID: c1993c93ef4a81bd0800000000000000
+      internalID: -2659194168164509412
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameScene_5
+      name: ElementalAlphabet_5
       rect:
         serializedVersion: 2
-        x: 760
-        y: 1888
-        width: 77
-        height: 53
+        x: 80
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,20 +254,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f217d4102c98cf500800000000000000
-      internalID: 431371130659238191
+      spriteID: 26311e18fcbd4db50800000000000000
+      internalID: 6617155436797825890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameScene_6
+      name: ElementalAlphabet_6
       rect:
         serializedVersion: 2
-        x: 203
-        y: 1845
-        width: 26
-        height: 35
+        x: 96
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,20 +275,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 498aa34d8735e6930800000000000000
-      internalID: 4138336886021859476
+      spriteID: 5c455f05faa595bb0800000000000000
+      internalID: -4946823006665747259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_GameScene_7
+      name: ElementalAlphabet_7
       rect:
         serializedVersion: 2
-        x: 90
-        y: 104
-        width: 34
-        height: 34
+        x: 112
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,29 +296,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 399f9fb39c17027b0800000000000000
-      internalID: -5251072056405395053
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_GameScene_8
-      rect:
-        serializedVersion: 2
-        x: 43
-        y: 62
-        width: 128
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 19b4f310e2f7eaa20800000000000000
-      internalID: 3075535431106775953
+      spriteID: 2a4e513e8c1cf0700800000000000000
+      internalID: 508838351463638178
       vertices: []
       indices: 
       edges: []
