@@ -9,6 +9,7 @@ public class PaddleController : MonoBehaviour
     private static int FIRST_TOUCH = 0;
     private static int TOUCH_COUNT = 1;
     private static float PADDLE_BORDER = 2.17f;
+    private static float UI_BORDER = 4.15f;
     private static float BALL_STOP_SPEED = 0;
     private static float DEFAULT_PADDLE_SCALE = 2;
     private static float UI_POSITION_Y = 180;
@@ -21,6 +22,9 @@ public class PaddleController : MonoBehaviour
     [SerializeField] private List<GameObject> balls;
     [SerializeField] private List<GameObject> paddles;
 
+    [SerializeField] private int paddleIndex;
+    [SerializeField] private int ballIndex;
+       
     public bool isStart = false;
 
 #if (UNITY_ANDROID)
@@ -50,14 +54,18 @@ public class PaddleController : MonoBehaviour
         InitializeGameObject(GameObject.Find("Paddles"), paddles);
         InitializeGameObject(GameObject.Find("Balls"), balls);
         StartCoroutine("Loop");
+
+        paddleIndex = BASE_PADDLE; // base paddle 외 paddle 의 gameObject false 추가해주기
+
+        ballIndex = BASE_BALL;
     }
 
     IEnumerator Loop()
     {
         while (true)
         {
-            MovePaddle(paddles[BASE_PADDLE].transform, balls[BASE_BALL].transform);
-            ShootBall(balls[BASE_BALL]);
+            MovePaddle(paddles[paddleIndex].transform, balls[ballIndex].transform);
+            ShootBall(balls[ballIndex]);
             yield return new WaitForSeconds(0.01f);
         }
     }
@@ -66,6 +74,14 @@ public class PaddleController : MonoBehaviour
     {
         if (Input.GetMouseButton(FIRST_TOUCH) || (Input.touchCount == TOUCH_COUNT && Input.GetTouch(FIRST_TOUCH).phase == TouchPhase.Moved))
         {
+            float paddleY = Mathf.Clamp(Camera.main.ScreenToWorldPoint(
+                Input.GetMouseButton(FIRST_TOUCH) ? Input.mousePosition : (Vector3)Input.GetTouch(FIRST_TOUCH).position
+                ).y, -UI_BORDER, UI_BORDER);
+
+            if (paddleY <= -UI_BORDER)
+            {
+                return;
+            }
 
             paddleX = Mathf.Clamp(Camera.main.ScreenToWorldPoint(
                 Input.GetMouseButton(FIRST_TOUCH) ? Input.mousePosition : (Vector3) Input.GetTouch(FIRST_TOUCH).position
@@ -97,5 +113,21 @@ public class PaddleController : MonoBehaviour
         {
             childObjects.Add(parentObject.transform.GetChild(i).gameObject);
         }
+    }
+
+    public void ChangePaddle(int paddleIndex)
+    {
+        int lastPaddleIndex = this.paddleIndex;
+
+        this.paddleIndex = ++paddleIndex;
+
+        // 패들 인덱스 초과 시 0번 인덱스로
+        if (this.paddleIndex >= 2)
+        {
+            this.paddleIndex = 0;
+        }
+
+        paddles[lastPaddleIndex].gameObject.SetActive(false);
+        paddles[this.paddleIndex].gameObject.SetActive(true);
     }
 }
