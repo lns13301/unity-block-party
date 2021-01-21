@@ -1,37 +1,31 @@
 fileFormatVersion: 2
-guid: 9dca1a8d1ca99484799fe1a7d96916ca
+guid: 6de35ce39b7ae6244a616fefaa1ee15d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4888094590901451556
-    second: ElementalAlphabet_0
+      213: 4599765378012805562
+    second: FrameButtonPack_0
   - first:
-      213: -1927902515650939593
-    second: ElementalAlphabet_1
+      213: -164467637013772574
+    second: FrameButtonPack_1
   - first:
-      213: -5695856868297860158
-    second: ElementalAlphabet_2
+      213: 6104051603694170095
+    second: FrameButtonPack_2
   - first:
-      213: 7271971953411330215
-    second: ElementalAlphabet_3
+      213: -1115812132087059568
+    second: FrameButtonPack_3
   - first:
-      213: -2659194168164509412
-    second: ElementalAlphabet_4
+      213: 5172731652319782012
+    second: FrameButtonPack_4
   - first:
-      213: 6617155436797825890
-    second: ElementalAlphabet_5
+      213: 7653302358951939390
+    second: FrameButtonPack_5
   - first:
-      213: -4946823006665747259
-    second: ElementalAlphabet_6
+      213: -3410244773434981628
+    second: FrameButtonPack_6
   - first:
-      213: 508838351463638178
-    second: ElementalAlphabet_7
-  - first:
-      213: -6468085893053375171
-    second: ElementalAlphabet_8
-  - first:
-      213: 8361729956231599462
-    second: ElementalAlphabet_9
+      213: -5521107563902825807
+    second: FrameButtonPack_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -141,55 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ElementalAlphabet_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42b7037d12006d340800000000000000
-      internalID: 4888094590901451556
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ElementalAlphabet_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7353b0160e6be35e0800000000000000
-      internalID: -1927902515650939593
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ElementalAlphabet_2
+      name: FrameButtonPack_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,83 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cb13a13b5044f0b0800000000000000
-      internalID: -5695856868297860158
+      spriteID: ab9f79e9d36a5df30800000000000000
+      internalID: 4599765378012805562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ElementalAlphabet_3
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a09fab86fb3be460800000000000000
-      internalID: 7271971953411330215
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ElementalAlphabet_4
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c1993c93ef4a81bd0800000000000000
-      internalID: -2659194168164509412
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ElementalAlphabet_5
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 26311e18fcbd4db50800000000000000
-      internalID: 6617155436797825890
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ElementalAlphabet_6
+      name: FrameButtonPack_1
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 16
-        height: 16
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,20 +170,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c455f05faa595bb0800000000000000
-      internalID: -4946823006665747259
+      spriteID: 2e60fb63e81b7bdf0800000000000000
+      internalID: -164467637013772574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ElementalAlphabet_7
+      name: FrameButtonPack_2
       rect:
         serializedVersion: 2
-        x: 80
+        x: 128
         y: 0
-        width: 16
-        height: 16
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,20 +191,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a4e513e8c1cf0700800000000000000
-      internalID: 508838351463638178
+      spriteID: fef28d8c792f5b450800000000000000
+      internalID: 6104051603694170095
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ElementalAlphabet_8
+      name: FrameButtonPack_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 192
         y: 0
-        width: 16
-        height: 16
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,20 +212,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3d96df462ebc36a0800000000000000
-      internalID: -6468085893053375171
+      spriteID: 09b21e617c6d380f0800000000000000
+      internalID: -1115812132087059568
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ElementalAlphabet_9
+      name: FrameButtonPack_4
       rect:
         serializedVersion: 2
-        x: 112
+        x: 256
         y: 0
-        width: 16
-        height: 16
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,8 +233,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6655de4c715da0470800000000000000
-      internalID: 8361729956231599462
+      spriteID: c74a0fe080c39c740800000000000000
+      internalID: 5172731652319782012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrameButtonPack_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3d4dff42fdf53a60800000000000000
+      internalID: 7653302358951939390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrameButtonPack_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403864262706ca0d0800000000000000
+      internalID: -3410244773434981628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrameButtonPack_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ba89d63ce51163b0800000000000000
+      internalID: -5521107563902825807
       vertices: []
       indices: 
       edges: []
