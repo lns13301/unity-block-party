@@ -7,6 +7,7 @@ public class PaddleController : MonoBehaviour
     private static int BASE_PADDLE = 0;
     private static int BASE_BALL = 0;
     private static int FIRST_TOUCH = 0;
+    private static int SECOND_TOUCH = 1;
     private static int TOUCH_COUNT = 1;
     private static float PADDLE_BORDER = 2.17f;
     private static float UI_BORDER = 4.15f;
@@ -64,7 +65,12 @@ public class PaddleController : MonoBehaviour
     {
         while (true)
         {
-            MovePaddle(paddles[paddleIndex].transform, balls[ballIndex].transform);
+            // 모든 패들을 터치 위치로 이동
+            for (int i = 0; i < paddles.Count; i++)
+            {
+                MovePaddle(paddles[paddleIndex].transform, balls[ballIndex].transform);
+            }
+
             ShootBall(balls[ballIndex]);
             yield return new WaitForSeconds(0.01f);
         }
@@ -78,8 +84,24 @@ public class PaddleController : MonoBehaviour
                 Input.GetMouseButton(FIRST_TOUCH) ? Input.mousePosition : (Vector3)Input.GetTouch(FIRST_TOUCH).position
                 ).y, -UI_BORDER, UI_BORDER);
 
+            // UI 부분 터치 시 패들 고정
             if (paddleY <= -UI_BORDER)
             {
+                return;
+            }
+
+            // 2개 이상 터치 시 패들 고정
+            if (Input.GetMouseButton(SECOND_TOUCH))
+            {
+/*                float paddleY2 = Mathf.Clamp(Camera.main.ScreenToWorldPoint(
+                    Input.GetMouseButton(FIRST_TOUCH) ? Input.mousePosition : (Vector3)Input.GetTouch(FIRST_TOUCH).position
+                    ).y, -UI_BORDER, UI_BORDER);
+
+                if (paddleY2 <= -UI_BORDER)
+                {
+                    return;
+                }*/
+
                 return;
             }
 
@@ -90,6 +112,7 @@ public class PaddleController : MonoBehaviour
             paddleTransform.position = new Vector2(paddleX, paddleTransform.position.y);
             CameraController.instance.MovePositionWithPaddle(paddleTransform.position);
 
+            // 게임 시작 전 공 위치 고정
             if (!isStart)
             {
                 ballTransform.position = new Vector2(paddleX, ballTransform.position.y);
