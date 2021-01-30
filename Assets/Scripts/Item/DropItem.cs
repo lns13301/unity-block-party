@@ -20,7 +20,7 @@ public class DropItem : MonoBehaviour
     private static float INITIALIZE_COLOR_INTENSITY = 0f;
     private static float GRAVITY_SCALE = 0.02f;
 
-    [SerializeField] private Item item;
+    [SerializeField] private InGameItem inGameItem;
     [SerializeField] private Material material;
     [SerializeField] private Color currentColor;
     [SerializeField] private float timer = 0;
@@ -70,6 +70,7 @@ public class DropItem : MonoBehaviour
     public void GetDropItem()
     {
         SoundManager.instance.PlayOneShotEffectSound(2);
+        PlayerManager.instance.AddInGameItem(inGameItem.MakeNewInGameItem());
 
         Destroy(gameObject);
     }
@@ -128,6 +129,11 @@ public class DropItem : MonoBehaviour
             default:
                 return WHITE_COLOR;
         }
+    }
+
+    public InGameItem GetInGameItem()
+    {
+        return inGameItem;
     }
 }
 

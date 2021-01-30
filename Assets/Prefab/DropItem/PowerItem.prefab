@@ -98,14 +98,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e007e3dc6ec91f419779ac140da5e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item:
+  inGameItem:
     code: 0
     names: []
     count: 0
     type: 0
     grade: 0
-    spritePath: 
-    sprite: {fileID: 0}
+    spritePath: Images/Item/InGame/PowerShot
+    sprite: {fileID: 1414468899322695829, guid: 04cf80f9c0304834f85664f49d1f5d36,
+      type: 3}
   material: {fileID: 0}
   currentColor: {r: 0, g: 0, b: 0, a: 0}
   timer: 0

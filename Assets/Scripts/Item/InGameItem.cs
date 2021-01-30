@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class Item
+public class InGameItem
 {
     public int code;
     public string[] names;
@@ -14,7 +14,7 @@ public class Item
 
     public Sprite sprite;
 
-    public Item(int code, string[] names, int count, ItemType type, Grade grade, string spritePath)
+    public InGameItem(int code, string[] names, int count, ItemType type, Grade grade, string spritePath)
     {
         this.code = code;
         this.names = names;
@@ -36,26 +36,8 @@ public class Item
         return Resources.Load<Sprite>(spritePath);
     }
 
-    public Item MakeNewItem()
+    public InGameItem MakeNewInGameItem()
     {
-        return new Item(code, names, count, type, grade, spritePath);
+        return new InGameItem(code, names, count, type, grade, spritePath);
     }
-}
-
-[System.Serializable]
-public enum ItemType
-{
-    NONE,
-    ITEM
-}
-
-[System.Serializable]
-public enum Grade
-{
-    NORMAL,
-    RARE,
-    EPIC,
-    UNIQUE,
-    LEGEND,
-    MIRACLE
 }
