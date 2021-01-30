@@ -28,6 +28,10 @@ public class PaddleController : MonoBehaviour
        
     public bool isStart = false;
 
+    public bool isTouching = false;
+    [SerializeField] private float firstTouchPositionY;
+    [SerializeField] private float lastTouchOverTwoCooldown; // 이전 터치가 2개 이상일 때 1개로 돌아가는 과정에서 패들이 중간 좌표로 이동되는 현상 막기위함
+
 #if (UNITY_ANDROID)
     void Awake()
     {
@@ -78,17 +82,27 @@ public class PaddleController : MonoBehaviour
 
     private void MovePaddle(Transform paddleTransform, Transform ballTransform)
     {
+        // 이전 터치가 2개 이상일 때 1개로 돌아가는 과정에서 패들이 중간 좌표로 이동되는 현상 막기위함
+        if (lastTouchOverTwoCooldown > 0)
+        {
+            lastTouchOverTwoCooldown -= Time.deltaTime;
+        }
+
         if (Input.GetMouseButton(FIRST_TOUCH) || (Input.touchCount == TOUCH_COUNT && Input.GetTouch(FIRST_TOUCH).phase == TouchPhase.Moved))
         {
+            // 터치 시작 좌표 입력
+            if (!isTouching)
+            {
+                isTouching = true;
+
+                firstTouchPositionY = Mathf.Clamp(Camera.main.ScreenToWorldPoint(
+                    Input.GetMouseButton(FIRST_TOUCH) ? Input.mousePosition : (Vector3)Input.GetTouch(FIRST_TOUCH).position
+                    ).y, -UI_BORDER, UI_BORDER);
+            }
+
             float paddleY = Mathf.Clamp(Camera.main.ScreenToWorldPoint(
                 Input.GetMouseButton(FIRST_TOUCH) ? Input.mousePosition : (Vector3)Input.GetTouch(FIRST_TOUCH).position
                 ).y, -UI_BORDER, UI_BORDER);
-
-            // UI 부분 터치 시 패들 고정
-            if (paddleY <= -UI_BORDER)
-            {
-                return;
-            }
 
             // 2개 이상 터치 시 패들 고정
             if (Input.GetMouseButton(SECOND_TOUCH))
@@ -102,6 +116,19 @@ public class PaddleController : MonoBehaviour
                     return;
                 }*/
 
+                lastTouchOverTwoCooldown = 0.2f;
+
+                return;
+            }
+
+            if (lastTouchOverTwoCooldown > 0)
+            {
+                return;
+            }
+            
+            // UI 부분 터치 시 패들 고정
+            if (firstTouchPositionY <= -UI_BORDER)
+            {
                 return;
             }
 
@@ -117,6 +144,10 @@ public class PaddleController : MonoBehaviour
             {
                 ballTransform.position = new Vector2(paddleX, ballTransform.position.y);
             }
+        }
+        else
+        {
+            isTouching = false;
         }
     }
 

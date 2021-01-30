@@ -9,6 +9,7 @@ public class Paddle : MonoBehaviour
     private static int TOUCH_TIME_MIN = 2;
     private static float TOUCH_RESET_TIME = 0.3f;
     private static float RESET = 0;
+    private static float UI_BORDER = 4.15f;
 
     public static Paddle instance;
 
@@ -54,9 +55,17 @@ public class Paddle : MonoBehaviour
             ChangePaddle();
         }
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(FIRST_TOUCH) || (Input.touchCount == TOUCH_COUNT && Input.GetTouch(FIRST_TOUCH).phase == TouchPhase.Moved))
         {
-            touchTimes++; // 한번 무작위 터치시에 카운트를 증가시킴
+            // UI 부분 터치 시 카운트 시키지 않음
+            float paddleY = Mathf.Clamp(Camera.main.ScreenToWorldPoint(
+                Input.GetMouseButton(FIRST_TOUCH) ? Input.mousePosition : (Vector3)Input.GetTouch(FIRST_TOUCH).position
+                ).y, -UI_BORDER, UI_BORDER);
+
+            if (Input.GetMouseButtonDown(0) && paddleY > -UI_BORDER)
+            {
+                touchTimes++; // 한번 무작위 터치시에 카운트를 증가시킴
+            }
         }
 
         if (touchTimes > RESET)
