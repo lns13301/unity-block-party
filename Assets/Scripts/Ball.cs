@@ -161,6 +161,7 @@ public class Ball : MonoBehaviour
 
             ReflectBallByBrick(collision.transform.position);
             lastCollisionWall = Direction.BRICK;
+            Combo.instance.AddCombo();
         }
 
         if (collision.gameObject.tag == PADDLE_TAG)
