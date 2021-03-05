@@ -22,6 +22,7 @@ public class PaddleController : MonoBehaviour
 
     [SerializeField] private List<GameObject> balls;
     [SerializeField] private List<GameObject> paddles;
+    [SerializeField] private Transform paddleParent;
 
     [SerializeField] private int paddleIndex;
     [SerializeField] private int ballIndex;
@@ -72,7 +73,7 @@ public class PaddleController : MonoBehaviour
             // 모든 패들을 터치 위치로 이동
             for (int i = 0; i < paddles.Count; i++)
             {
-                MovePaddle(paddles[paddleIndex].transform, balls[ballIndex].transform);
+                MovePaddle(paddleParent, balls[ballIndex].transform);
             }
 
             ShootBall(balls[ballIndex]);

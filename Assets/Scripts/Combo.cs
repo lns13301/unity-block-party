@@ -6,14 +6,13 @@ using UnityEngine.UI;
 public class Combo : MonoBehaviour
 {
     private static string COMBOTEXT_EN = " Combo";
-    private static float ALPHA_SPEED = 1f;
-    private static float COMBO_FADE_OUT_START_TIMER = 3f;
+    private static float COMBO_RESET__TIMER = 3f;
 
     public static Combo instance;
 
     public Text comboText;
-    private Color alpha;
 
+    private Animator animator;
     public bool isComboOn;
 
     [SerializeField] private int combo;
@@ -22,6 +21,7 @@ public class Combo : MonoBehaviour
     void Start()
     {
         instance = this;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -32,7 +32,8 @@ public class Combo : MonoBehaviour
 
     public void AddCombo(int value = 1)
     {
-        StopCoroutine("FadeOutCombo");
+        CancelInvoke("ResetCombo");
+        animator.SetBool("isFadeOut", false);
 
         if (value == -1)
         {
@@ -43,7 +44,7 @@ public class Combo : MonoBehaviour
         {
             combo += value;
             ChangeCombo(combo);
-            Invoke("StartFadeOut", COMBO_FADE_OUT_START_TIMER);
+            FadeOut();
         }
     }
 
@@ -52,20 +53,15 @@ public class Combo : MonoBehaviour
         comboText.text = combo + COMBOTEXT_EN;
     }
 
-    public void StartFadeOut()
+    public void FadeOut()
     {
-        StartCoroutine("FadeOutCombo");
+        animator.SetTrigger("addCombo");
+        animator.SetBool("isFadeOut", true);
+        Invoke("ResetCombo", COMBO_RESET__TIMER);
     }
 
-    IEnumerator FadeOutCombo()
+    public void ResetCombo()
     {
-        alpha = comboText.color;
-
-        while (isComboOn)
-        {
-            alpha.a = Mathf.Lerp(alpha.a, 0, Time.deltaTime * ALPHA_SPEED);
-            comboText.color = alpha;
-            yield return null;
-        }
+        combo = 0;
     }
 }
