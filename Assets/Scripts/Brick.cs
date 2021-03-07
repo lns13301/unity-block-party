@@ -28,7 +28,7 @@ public class Brick : MonoBehaviour
         material = GetComponent<SpriteRenderer>().material;
         currentColor = ParticleManager.instance.GetColorByParticleType(particleType);
 
-        brickStat.hp = 2;
+        brickStat.hp = 100;
 
        StartCoroutine("ChangeGlow");
     }
@@ -80,7 +80,7 @@ public class Brick : MonoBehaviour
         SoundManager.instance.PlayOneShotEffectSound(0);
         ParticleManager.instance.CreateParticleByType(gameObject, particleType);
 
-        TMPManager.instance.CreateText(Random.Range(10,100).ToString(), gameObject, transform.position);
+        TMPManager.instance.CreateText(damage.ToString(), gameObject, transform.position);
 
         if (Random.Range(0, 10) < 1)
         {
@@ -93,19 +93,46 @@ public class Brick : MonoBehaviour
         }
     }
 
+    public void TakeDamage(int damage, string text)
+    {
+        brickStat.hp -= damage;
+        SoundManager.instance.PlayOneShotEffectSound(0);
+        ParticleManager.instance.CreateParticleByType(gameObject, particleType);
+
+        TMPManager.instance.CreateText(damage.ToString(), gameObject, transform.position);
+
+        TMPManager.instance.CreateText(text, gameObject, new Vector2(transform.position.x, transform.position.y + 0.5f), 3, 1);
+
+        if (brickStat.hp <= DEAD_HEALTH)
+        {
+            DestroyGameObject();
+        }
+    }
+
+    public void TakeDamage(int damage, Color damageColor)
+    {
+        brickStat.hp -= damage;
+        SoundManager.instance.PlayOneShotEffectSound(0);
+        ParticleManager.instance.CreateParticleByType(gameObject, particleType);
+
+        TMPManager.instance.CreateText(damage.ToString(), gameObject, transform.position, damageColor);
+
+        if (brickStat.hp <= DEAD_HEALTH)
+        {
+            DestroyGameObject();
+        }
+    }
+
+    public void TakeDamageText(string text, Color textColor)
+    {
+        TMPManager.instance.CreateText(text, gameObject, new Vector2(transform.position.x, transform.position.y + 0.5f), textColor, 3, 1);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == BALL_TAG)
         {
-            TakeDamage(1);
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == BALL_TAG)
-        {
-            TakeDamage(1);
+            TakeDamage((int) collision.GetComponent<Ball>().CalculatePower());
         }
     }
 }

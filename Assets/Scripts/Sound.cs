@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Sound : MonoBehaviour
 {
+    public string soundName;
     public bool isPlay;
     private AudioSource audioSource;
     // Start is called before the first frame update

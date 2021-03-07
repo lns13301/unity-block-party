@@ -5,91 +5,88 @@ using System;
 
 public class SoundManager : MonoBehaviour
 {
-    private Sound[] sound;
-    private Sound[] effectSound;
-    public int mapCode;
-    public bool isMapChanged;
     public static SoundManager instance;
+
+    [SerializeField] private Sound[] sounds;
+    [SerializeField] private Sound[] effectSounds;
+
+    public Dictionary<string, Sound> soundMap;
 
     public int timer;
 
-    private void Start()
+    private void Awake()
     {
         instance = this;
 
-        sound = new Sound[transform.GetChild(0).childCount];
-        effectSound = new Sound[transform.GetChild(1).childCount];
+        sounds = new Sound[transform.GetChild(0).childCount];
+        effectSounds = new Sound[transform.GetChild(1).childCount];
+        soundMap = new Dictionary<string, Sound>();
 
         // 음악 등록
         for (int i = 0; i < transform.GetChild(0).childCount; i++)
         {
-            sound[i] = transform.GetChild(0).GetChild(i).gameObject.GetComponent<Sound>();
+            sounds[i] = transform.GetChild(0).GetChild(i).GetComponent<Sound>();
+            soundMap.Add(sounds[i].soundName, sounds[i]);
         }
 
         // 효과음 등록
         for (int i = 0; i < transform.GetChild(1).childCount; i++)
         {
-            effectSound[i] = transform.GetChild(1).GetChild(i).gameObject.GetComponent<Sound>();
+            effectSounds[i] = transform.GetChild(1).GetChild(i).GetComponent<Sound>();
+            soundMap.Add(effectSounds[i].soundName, effectSounds[i]);
         }
     }
 
     public void PlayMusic(int index)
     {
-        sound[index].PlaySound();
-    }
-
-    public void PlayMusicOnly(int index)
-    {
-        StopAllMusics();
-        sound[index].PlaySound();
+        sounds[index].PlaySound();
     }
 
     public void PlayEffectSound(int index)
     {
-        effectSound[index].PlaySound();
+        effectSounds[index].PlaySound();
     }
 
     public void PlayOneShotEffectSound(int index)
     {
-        effectSound[index].StopSound();
-        effectSound[index].PlaySound();
+        effectSounds[index].StopSound();
+        effectSounds[index].PlaySound();
     }
 
-    public void StopMusic(int index)
+    public void PlayOneShowSoundFindByName(string name)
     {
-        sound[index].StopSound();
+        try
+        {
+            soundMap[name].StopSound();
+            soundMap[name].PlaySound();
+        }
+        catch (NullReferenceException)
+        {
+            Debug.LogError("찾을 수 없음: " + name);
+        }
+    }
+
+    public void StopSound(int index)
+    {
+        sounds[index].StopSound();
     }
 
     public void StopEffectSound(int index)
     {
-        effectSound[index].StopSound();
+        effectSounds[index].StopSound();
     }
 
     public void RefreshSounds()
     {
         CancelInvoke();
         StopAllSounds();
-        isMapChanged = true;
-    }
-
-    public void StopAllMusics()
-    {
-        for (int i = 0; i < sound.Length; i++)
-        {
-            sound[i].StopSound();
-        }
     }
 
     public void StopAllSounds()
     {
-        for (int i = 0; i < sound.Length; i++)
+        for (int i = 0; i < sounds.Length; i++)
         {
-            sound[i].StopSound();
-        }
-
-        for (int i = 0; i < sound.Length; i++)
-        {
-            effectSound[i].StopSound();
+            sounds[i].StopSound();
         }
     }
 

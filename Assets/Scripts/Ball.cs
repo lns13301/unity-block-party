@@ -45,6 +45,8 @@ public class Ball : MonoBehaviour
     [SerializeField] private float ballSpeedWeight;
     [SerializeField] private Direction lastCollisionWall;
 
+    [SerializeField] private Skill skill;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -440,5 +442,10 @@ public class Ball : MonoBehaviour
         {
             velocity = new Vector2(velocity.x, -velocity.y);
         }
+    }
+
+    public float CalculatePower()
+    {
+        return Random.Range(10, 100);
     }
 }

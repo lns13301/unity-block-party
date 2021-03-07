@@ -65,3 +65,6 @@ TagManager:
   - name: TMP
     uniqueID: 1213458909
     locked: 0
+  - name: Effect
+    uniqueID: 50283389
+    locked: 0
