@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ElectricBall : MonoBehaviour
 {
+    private static int DEFAULT_CHAINING_TIME = 3;
     private static string BRICK_TAG = "Brick";
 
     public bool isSkillOn;
@@ -30,6 +31,7 @@ public class ElectricBall : MonoBehaviour
         effect.transform.position = transform.position;
 
         GameObject range = Instantiate(attackRangeRadius);
+        range.GetComponent<SkillRangeAttack>().leftChainingTime = DEFAULT_CHAINING_TIME;
         range.transform.position = transform.position + new Vector3(0, 0.5f, 0);
     }
 
