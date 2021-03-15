@@ -13,6 +13,8 @@ public class ElectricBall : MonoBehaviour
     public GameObject skillEffect;
     public GameObject attackRangeRadius;
 
+    private float duration;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +24,7 @@ public class ElectricBall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        ChangeDuration();
     }
 
     public void DoAttack()
@@ -51,5 +53,23 @@ public class ElectricBall : MonoBehaviour
     public void CreateBonusAttack()
     {
 
+    }
+
+    public void Activate()
+    {
+        duration = 5f;
+        isSkillOn = true;
+    }
+
+    private void ChangeDuration()
+    {
+        if (duration > 0)
+        {
+            duration -= Time.deltaTime;
+        }
+        else
+        {
+            isSkillOn = false;
+        }
     }
 }
