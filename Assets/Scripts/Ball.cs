@@ -179,6 +179,12 @@ public class Ball : MonoBehaviour
                 return;
             }
 
+            // 바닥에 부딪히면 체력을 깎는다.
+            if (collision.GetComponent<WallCollider>().GetDirection() == Direction.BOTTOM)
+            {
+                Paddle.instance.TakeDamage(10);
+            }
+
             ReflectBallByWall(collision.transform.position, collision.gameObject.GetComponent<WallCollider>().GetDirection());
             lastCollisionWall = collision.GetComponent<WallCollider>().GetDirection();
         }

@@ -7,8 +7,8 @@ public class PlayerManager : MonoBehaviour
 {
     private static int ITEM_SLOT_ITEM_IMAGE_INDEX = 0;
     private static int SLOT_MAX_COUNT = 2;
-    private static Color32 HIDE_COLOR = new Color32(255, 255,255, 0);
-    private static Color32 SHOW_COLOR = new Color32(255, 255,255, 255);
+    private static Color32 HIDE_COLOR = new Color32(255, 255, 255, 0);
+    private static Color32 SHOW_COLOR = new Color32(255, 255, 255, 255);
 
     public static PlayerManager instance;
 

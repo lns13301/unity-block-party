@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Paddle : MonoBehaviour
 {
@@ -20,16 +21,26 @@ public class Paddle : MonoBehaviour
     [SerializeField] private float touchTimer;
     [SerializeField] private int touchTimes;
 
+    // HealthBar text
+    public int damagedTimer;
+    public GameObject healthBarBackground;
+    public Image healthBar;
+    public float delayHP;
+    public float healthPoint;
+    public float healthPointMax;
+
     // Start is called before the first frame update
     void Start()
     {
         instance = this;
+        InitializeHealthBar();
     }
 
     // Update is called once per frame
     void Update()
     {
         ChangePaddleTouchUpdate();
+        RefreshHealthBar();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -38,6 +49,18 @@ public class Paddle : MonoBehaviour
         {
             collision.GetComponent<DropItem>().GetDropItem();
         }
+    }
+
+    public void InitializeHealthBar()
+    {
+        healthBarBackground = transform.GetChild(0).GetChild(0).gameObject;
+        healthBar = transform.GetChild(0).GetChild(0).GetChild(0).GetComponent<Image>();
+        healthBar.fillAmount = 1.0f;
+    }
+
+    public void RefreshHealthBar()
+    {
+        healthBar.fillAmount = Mathf.Lerp(healthBar.fillAmount, healthPoint / healthPointMax, Time.deltaTime * 3f);
     }
 
     public void ChangePaddle()
@@ -78,5 +101,10 @@ public class Paddle : MonoBehaviour
 
             touchTimer += Time.deltaTime;
         }
+    }
+
+    public void TakeDamage(float damage)
+    {
+        healthPoint -= damage;
     }
 }
