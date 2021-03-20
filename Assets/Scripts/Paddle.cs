@@ -11,6 +11,7 @@ public class Paddle : MonoBehaviour
     private static float TOUCH_RESET_TIME = 0.3f;
     private static float RESET = 0;
     private static float UI_BORDER = 4.15f;
+    private static Color DAMAGED_COLOR = new Color32(202, 0, 255, 255);
 
     public static Paddle instance;
 
@@ -106,5 +107,11 @@ public class Paddle : MonoBehaviour
     public void TakeDamage(float damage)
     {
         healthPoint -= damage;
+        TakeDamageText(damage.ToString(), DAMAGED_COLOR);
+    }
+
+    public void TakeDamageText(string text, Color textColor)
+    {
+        TMPManager.instance.CreateText(text, gameObject, new Vector2(transform.position.x, transform.position.y - 0.2f), textColor, 5, 1);
     }
 }
